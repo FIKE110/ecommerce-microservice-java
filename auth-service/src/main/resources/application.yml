@@ -1,0 +1,45 @@
+
+spring:
+  banner:
+    location: banner.txt
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommercems
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: auth-service
+api:
+  url: '/api/v1/auth'
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0
+logging:
+  level:
+    org.springframework.security: trace
+server:
+  port: 0
