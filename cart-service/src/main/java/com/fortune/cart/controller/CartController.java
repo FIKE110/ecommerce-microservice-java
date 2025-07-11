@@ -9,6 +9,7 @@ import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.Duration;
+import java.util.Map;
 import java.util.UUID;
 
 @RestController
@@ -21,21 +22,26 @@ public class CartController {
         this.cartService = cartService;
     }
 
+    @GetMapping
+    public ResponseEntity<Map<String,Integer>> getCart(@AuthenticationPrincipal Jwt jwt) {
+        return ResponseEntity.ok(cartService.getCart(jwt).getItems());
+    }
+
     @PostMapping("/{productId}/add")
     public ResponseEntity<?> saveInCache(@AuthenticationPrincipal Jwt jwt, @PathVariable("productId") UUID productId) {
-       cartService.addToCart(jwt.getSubject(),productId.toString());
+        cartService.addToCart(jwt,productId.toString());
        return ResponseEntity.noContent().build();
     }
 
     @PostMapping("/{productId}/remove")
     public ResponseEntity<?> removeFromCache(@AuthenticationPrincipal Jwt jwt,@PathVariable("productId") UUID productId) {
-        cartService.decreaseProductInCart(jwt.getSubject(),productId.toString());
+        cartService.decreaseProductInCart(jwt,productId.toString());
         return ResponseEntity.noContent().build();
     }
 
     @PostMapping("/{productId}/delete")
     public ResponseEntity<?> deleteFromCache(@AuthenticationPrincipal Jwt jwt,@PathVariable("productId") UUID productId) {
-        cartService.removeFromCart(jwt.getSubject(),productId.toString());
+        cartService.removeFromCart(jwt,productId.toString());
         return ResponseEntity.noContent().build();
     }
 }

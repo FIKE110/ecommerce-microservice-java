@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("${api.url}")
+@RequestMapping(value = {"${api.url}","${api.url}/"})
 public class ProductController {
 
     private final ProductService productService;
