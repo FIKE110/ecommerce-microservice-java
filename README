@@ -1,0 +1,72 @@
+# Ecommerce Microservices
+
+This repository contains a microservices-based ecommerce platform built with Spring Boot and Spring Cloud. Each service is a separate Maven module, allowing for independent development, deployment, and scaling.
+
+## Project Structure
+
+- **admin-server**: Spring Boot Admin server for monitoring and managing microservices.
+- **api-gateway**: API Gateway using Spring Cloud Gateway for routing and security.
+- **auth-service**: Handles authentication and authorization (OAuth2, JWT, etc.).
+- **cart-service**: Manages customer shopping carts.
+- **config-server**: Centralized configuration management using Spring Cloud Config.
+- **customer-service**: Manages customer profiles and related data.
+- **inventory-service**: Handles product inventory and stock management.
+- **notification-service**: Sends notifications (email, SMS, etc.) to users.
+- **order-service**: Manages order creation, processing, and history.
+- **payment-service**: Handles payment processing and integration.
+- **product-service**: Manages product catalog, details, and search.
+- **service-discovery**: Eureka server for service registration and discovery.
+- **utils**: Shared utility classes and code used by other services.
+
+## Prerequisites
+
+- Java 17+
+- Maven 3.8+
+- Docker (for running dependencies like databases, if needed)
+
+## Building the Project
+
+To build all modules:
+
+```sh
+mvn clean install
+```
+
+## Running the Services
+
+Each service can be run independently. For example, to run the `product-service`:
+
+```sh
+cd product-service
+mvn spring-boot:run
+```
+
+Repeat for other services as needed.
+
+## Configuration
+
+Configuration is managed centrally via the `config-server`. Each service fetches its configuration from the config server at startup.
+
+## Service Discovery
+
+All services register with the Eureka server (`service-discovery`), enabling dynamic discovery and load balancing.
+
+## Monitoring
+
+The `admin-server` provides a dashboard for monitoring the health and metrics of all microservices.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**Note:** For more details on each service, refer to the respective module's documentation or source code.

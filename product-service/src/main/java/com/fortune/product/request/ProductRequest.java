@@ -1,8 +1,6 @@
 package com.fortune.product.request;
 
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,10 +19,14 @@ public class ProductRequest {
     private String brand;
     @NotBlank
     private String description;
-    @Min(0)
+    @DecimalMin(value = "0")
+    @NotNull
     private Double price;
     @Min(0)
     private Double discount=0.0;
+    @DecimalMin("0")
+    @NotNull
+    private Long quantity;
     @NotNull
     private List<String> images;
     @NotNull

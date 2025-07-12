@@ -33,6 +33,12 @@ spring:
                 - Path=/product/**
               filters:
                 - RewritePath=/product/(?<segment>.*), /api/v1/product/${segment}
+            - id: inventory-service
+              uri: lb://INVENTORY-SERVICE
+              predicates:
+                - Path=/inventory/**
+              filters:
+                - RewritePath=/inventory/(?<segment>.*), /api/v1/inventory/${segment}
   main:
     web-application-type: reactive
 management:
