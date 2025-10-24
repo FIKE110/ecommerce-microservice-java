@@ -4,7 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74a478c6-c4ae-4b0d-9c87-dad162f76c2a" name="Changes" comment="" />
+    <list default="true" id="74a478c6-c4ae-4b0d-9c87-dad162f76c2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api-docs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/AuthServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/enumeration/AuthResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/enumeration/AuthResponseCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/fortune/auth/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/CartSpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/CartSpringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/config/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/config/ProductClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/CustomerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/InventorySpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/InventorySpringApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/service/RabbitMQService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/service/RabbitMQService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/fortune/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/fortune/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/fortune/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/fortune/EventType.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +59,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="com.intellij.jpb.JpaRepository" />
         <option value="Record" />
+        <option value="com.intellij.jpb.JpaRepository" />
+        <option value="Interface" />
+        <option value="Dockerfile" />
         <option value="Enum" />
         <option value="Class" />
       </list>
@@ -40,7 +87,7 @@
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -53,57 +100,77 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CustomerServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.AuthServiceApplication | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.AuthServiceApplication | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.CustomerServiceApplication | #1.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.customer-service [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.customer-service [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.customer-service [spring-boot:run,\\...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ecommerce [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.product-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AdminServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CartSpringbootApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Customer.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CustomerServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.InventorySpringApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ServiceDiscoveryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.customer2.executor&quot;: &quot;Run&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/fortune/Documents/projects/playpick-backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/fortune/Documents/projects/ecommerce/utils/src/main/java/com/fortune/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CustomerServiceApplication.executor": "Run",
+    "Docker.admin-server/Dockerfile build.executor": "Run",
+    "Docker.admin-server/Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml.service-name: Compose Deployment.executor": "Run",
+    "HTTP Request.AuthServiceApplication | #1.executor": "Run",
+    "HTTP Request.AuthServiceApplication | #2.executor": "Run",
+    "HTTP Request.AuthServiceApplication | #4.executor": "Run",
+    "HTTP Request.CustomerServiceApplication | #1.executor": "Run",
+    "HTTP Request.DocsApplication | #1.executor": "Run",
+    "HTTP Request.customer2 | #2.executor": "Run",
+    "JAR Application.admin-server-1.0-SNAPSHOT.jar.executor": "Run",
+    "Maven.admin-server [compile].executor": "Run",
+    "Maven.admin-server [deploy].executor": "Run",
+    "Maven.admin-server [org.apache.maven.plugins:maven-jar-plugin:3.4.1:jar].executor": "Run",
+    "Maven.admin-server [org.springframework.boot:spring-boot-maven-plugin:3.5.3:repackage].executor": "Run",
+    "Maven.admin-server [package].executor": "Run",
+    "Maven.customer-service [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.customer-service [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
+    "Maven.customer-service [spring-boot:run,\\...].executor": "Run",
+    "Maven.ecommerce [clean].executor": "Run",
+    "Maven.ecommerce-microservice [clean].executor": "Run",
+    "Maven.ecommerce-microservice [compile].executor": "Run",
+    "Maven.ecommerce-microservice [package].executor": "Run",
+    "Maven.product-service [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.AdminServerApplication.executor": "Run",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.CartSpringbootApplication.executor": "Run",
+    "Spring Boot.Customer.executor": "Run",
+    "Spring Boot.CustomerServiceApplication.executor": "Run",
+    "Spring Boot.DocsApplication.executor": "Run",
+    "Spring Boot.InventorySpringApplication.executor": "Run",
+    "Spring Boot.OrderSpringApplication.executor": "Run",
+    "Spring Boot.PaymentApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.ServiceDiscoveryApplication.executor": "Run",
+    "Spring Boot.Unnamed.executor": "Run",
+    "Spring Boot.customer2.executor": "Run",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/fortune/Documents/projects/ecommerce/payment-service/src/main/java/com/fortune/payment/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/fortune/Documents/projects/ecommerce/api-docs/src/main/java/com/fortune/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "ts.external.directory.path": "/home/fortune/Documents/projects/ecommerce/webapp/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -112,12 +179,20 @@
       <recent name="com.fortune.customer.request" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/customer-service/src/main/resources/certs" />
+      <recent name="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/config" />
+      <recent name="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/config" />
+      <recent name="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/config" />
+      <recent name="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/config" />
+      <recent name="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-docs/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/api-docs/src/main/resources/static/docs" />
       <recent name="$PROJECT_DIR$/customer-service/src/main/java/com/fortune" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fortune.payment.config" />
+      <recent name="com.fortune.payment.service" />
       <recent name="com.fortune.product.config" />
     </key>
   </component>
@@ -131,13 +206,24 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
-    <configuration name="AdminServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JAR Application.admin-server-1.0-SNAPSHOT.jar">
+    <configuration name="admin-server-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/admin-server/target/admin-server-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AdminServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="admin-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.admin.AdminServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cart-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.cart.CartSpringbootApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fortune.admin.*" />
+          <option name="PATTERN" value="com.fortune.cart.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +231,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="api-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.gateway.ApiGatewayApplication" />
+    <configuration name="OrderSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.order.OrderSpringApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fortune.gateway.*" />
+          <option name="PATTERN" value="com.fortune.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,48 +244,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Customer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ALTERNATIVE_JRE_PATH" value="17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="customer-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.customer.CustomerServiceApplication" />
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="customer-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.customer.CustomerServiceApplication" />
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InventorySpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="inventory-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.inventory.InventorySpringApplication" />
+    <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="payment-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.payment.PaymentApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fortune.inventory.*" />
+          <option name="PATTERN" value="com.fortune.payment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -213,19 +263,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fortune.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-discovery" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fortune.discovery.ServiceDiscoveryApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fortune.discovery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -250,23 +287,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Spring Boot.CustomerServiceApplication" />
-      <item itemvalue="Spring Boot.Customer" />
-      <item itemvalue="Spring Boot.customer2" />
-      <item itemvalue="Spring Boot.ProductServiceApplication" />
-      <item itemvalue="Spring Boot.InventorySpringApplication" />
-      <item itemvalue="Spring Boot.ServiceDiscoveryApplication" />
+      <item itemvalue="JAR Application.admin-server-1.0-SNAPSHOT.jar" />
       <item itemvalue="Spring Boot.AdminServerApplication" />
-      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.customer2" />
+      <item itemvalue="Spring Boot.PaymentApplication" />
+      <item itemvalue="Spring Boot.CartSpringbootApplication" />
+      <item itemvalue="Spring Boot.OrderSpringApplication" />
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.InventorySpringApplication" />
-        <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="JAR Application.admin-server-1.0-SNAPSHOT.jar" />
+        <item itemvalue="Spring Boot.PaymentApplication" />
+        <item itemvalue="Spring Boot.OrderSpringApplication" />
         <item itemvalue="Spring Boot.ProductServiceApplication" />
-        <item itemvalue="Spring Boot.AdminServerApplication" />
-        <item itemvalue="Spring Boot.ServiceDiscoveryApplication" />
+        <item itemvalue="Spring Boot.CartSpringbootApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -306,12 +354,50 @@
       <workItem from="1752255687158" duration="8442000" />
       <workItem from="1752277129126" duration="3695000" />
       <workItem from="1752305391041" duration="8230000" />
-      <workItem from="1752319625169" duration="3102000" />
+      <workItem from="1752319625169" duration="5023000" />
+      <workItem from="1752429101062" duration="13020000" />
+      <workItem from="1752575125660" duration="10061000" />
+      <workItem from="1752600114258" duration="4353000" />
+      <workItem from="1752609815421" duration="544000" />
+      <workItem from="1753202926295" duration="2923000" />
+      <workItem from="1753257729293" duration="14000" />
+      <workItem from="1754919628323" duration="161000" />
+      <workItem from="1754922907993" duration="1397000" />
+      <workItem from="1754929631610" duration="22000" />
+      <workItem from="1757181508183" duration="2512000" />
+      <workItem from="1757184037641" duration="12147000" />
+      <workItem from="1757234885449" duration="6262000" />
+      <workItem from="1757320519589" duration="686000" />
+      <workItem from="1757415444715" duration="162000" />
+      <workItem from="1757416447710" duration="2123000" />
+      <workItem from="1757423822989" duration="1649000" />
+      <workItem from="1757454913650" duration="3450000" />
+      <workItem from="1757520508125" duration="2703000" />
+      <workItem from="1757712922321" duration="1550000" />
+      <workItem from="1757919881496" duration="101000" />
+      <workItem from="1758042856961" duration="75000" />
+      <workItem from="1758077756386" duration="217000" />
+      <workItem from="1761150580470" duration="2682000" />
+      <workItem from="1761153309167" duration="5369000" />
+      <workItem from="1761185987156" duration="11873000" />
+      <workItem from="1761248719535" duration="26879000" />
+      <workItem from="1761337994800" duration="2014000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,16 +411,6 @@
           <url>file://$PROJECT_DIR$/customer-service/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/fortune/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/payment-service/src/main/java/com/fortune/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/fortune/Main.java</url>

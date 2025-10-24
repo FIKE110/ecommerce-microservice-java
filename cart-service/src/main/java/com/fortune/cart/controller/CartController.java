@@ -23,7 +23,7 @@ public class CartController {
     }
 
     @GetMapping
-    public ResponseEntity<Map<String,Integer>> getCart(@AuthenticationPrincipal Jwt jwt) {
+    public ResponseEntity<Map<String,Map<String,Double>>> getCart(@AuthenticationPrincipal Jwt jwt) {
         return ResponseEntity.ok(cartService.getCart(jwt).getItems());
     }
 
@@ -43,5 +43,15 @@ public class CartController {
     public ResponseEntity<?> deleteFromCache(@AuthenticationPrincipal Jwt jwt,@PathVariable("productId") UUID productId) {
         cartService.removeFromCart(jwt,productId.toString());
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/checkout")
+    public ResponseEntity<Map<String,String>> checkout(@AuthenticationPrincipal Jwt jwt){
+        var response=cartService.checkout(jwt);
+        return ResponseEntity.ok(
+                Map.of(
+                        "checkout_url",response
+                )
+        );
     }
 }

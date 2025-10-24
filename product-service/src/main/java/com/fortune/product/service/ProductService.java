@@ -55,6 +55,10 @@ public class ProductService {
         return productRepository.findById(id).orElseThrow(()->new RuntimeException("Product not found"));
     }
 
+    public Double getProductPriceById(UUID id) {
+        return productRepository.findById(id).orElseThrow(()->new RuntimeException("Product not found")).getPrice();
+    }
+
     public Page<Product> getProducts(Integer page, Integer size, String sort) {
         var request=PageRequest.of(0, 10, Sort.by(sort));
         return productRepository.findAll(request);

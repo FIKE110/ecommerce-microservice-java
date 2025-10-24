@@ -1,5 +1,6 @@
 package com.fortune.product;
 
+import com.fortune.product.config.AppConfigProp;
 import com.fortune.product.security.RsaProperties;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
@@ -13,7 +14,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 @EnableRabbit
 @EnableAsync
-@EnableConfigurationProperties(RsaProperties.class)
+@EnableConfigurationProperties({RsaProperties.class, AppConfigProp.class})
 public class ProductServiceApplication {
 
     public static void main(String[] args) {

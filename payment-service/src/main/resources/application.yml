@@ -1,0 +1,37 @@
+api-gateway-url: http:/localhost:8081
+app:
+  title: "PAYMENT-SERVICE"
+  version: "1.0.0"
+  description: "API documentation for My Payment Service Microservice"
+  url: ${api-gateway-url}
+spring:
+  banner:
+    location: banner.txt
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommercems
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: payment-service
+api:
+  url: '/api/v1/payment'
+rsa:
+  public-key: classpath:certs/public.pem
+server:
+  port: 0
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+interswitch:
+  merchant_code: MX253560
+  currency: 566
+  client_id: IKIA23A5BF601A78A3226913AE70DEB833BFE6F624C0
+  secret_key: 83kGI2l3IFduhLt

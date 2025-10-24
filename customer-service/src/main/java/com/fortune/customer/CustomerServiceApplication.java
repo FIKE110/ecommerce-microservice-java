@@ -1,5 +1,6 @@
 package com.fortune.customer;
 
+import com.fortune.customer.config.AppConfigProp;
 import com.fortune.customer.config.RsaProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableWebSecurity
-@EnableConfigurationProperties(RsaProperties.class)
+@EnableConfigurationProperties({RsaProperties.class, AppConfigProp.class})
 public class CustomerServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(CustomerServiceApplication.class,args);

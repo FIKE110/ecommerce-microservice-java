@@ -1,0 +1,6 @@
+services:
+  service-name:
+    image: adminserver:lastest
+    build: ./admin-server/Dockerfile
+    ports:
+      - 9090:9090

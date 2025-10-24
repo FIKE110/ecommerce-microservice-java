@@ -18,7 +18,12 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req->req
-                        .requestMatchers("/actuator/**").permitAll()
+                        .requestMatchers("/actuator/**",
+                                "/api/v1/cart/v3/api-docs",
+                                "/api/v1/cart/v3/api-docs/**",
+                                "/api/v1/cart/docs",
+                                "/api/v1/cart/docs/**"
+                                ).permitAll()
                         .anyRequest().authenticated())
                 .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
                 .build();

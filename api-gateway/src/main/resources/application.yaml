@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: api-gateway-service
@@ -9,36 +8,30 @@ spring:
       server:
         webflux:
           routes:
+            - id: api-docs-service
+              uri: lb://API-DOCS-SERVICE
+              predicates:
+                - Path=/docs/**
             - id: customer-service
               uri: lb://CUSTOMER-SERVICE
               predicates:
-                - Path=/users/**
-              filters:
-                - RewritePath=/users/(?<segment>.*), /api/v1/customer/${segment}
+                - Path=/api/v1/customer/**
             - id: auth-service
               uri: lb://AUTH-SERVICE
               predicates:
-                - Path=/auth/**
-              filters:
-                - RewritePath=/auth/(?<segment>.*), /api/v1/auth/${segment}
+                - Path=/api/v1/auth/**
             - id: cart-service
               uri: lb://CART-SERVICE
               predicates:
-                - Path=/cart/**
-              filters:
-                - RewritePath=/cart/(?<segment>.*), /api/v1/cart/${segment}
+                - Path=/api/v1/cart/**
             - id: product-service
               uri: lb://PRODUCT-SERVICE
               predicates:
-                - Path=/product/**
-              filters:
-                - RewritePath=/product/(?<segment>.*), /api/v1/product/${segment}
+                - Path=/api/v1/product/**
             - id: inventory-service
               uri: lb://INVENTORY-SERVICE
               predicates:
-                - Path=/inventory/**
-              filters:
-                - RewritePath=/inventory/(?<segment>.*), /api/v1/inventory/${segment}
+                - Path=/api/v1/inventory/**
   main:
     web-application-type: reactive
 management:
@@ -62,3 +55,5 @@ eureka:
 logging:
   level:
     org.springframework.security: trace
+server:
+  port: 8081

@@ -1,4 +1,9 @@
-
+api-gateway-url: http:/localhost:8081
+app:
+  title: "AUTH-SERVICE"
+  version: "1.0.0"
+  description: "API documentation for My Auth Service Microservice"
+  url: ${api-gateway-url}
 spring:
   banner:
     location: banner.txt
@@ -43,3 +48,9 @@ logging:
     org.springframework.security: trace
 server:
   port: 0
+  forward-headers-strategy: framework
+springdoc:
+  api-docs:
+    path: /api/v1/auth/v3/api-docs
+  swagger-ui:
+    path: /api/v1/auth/docs

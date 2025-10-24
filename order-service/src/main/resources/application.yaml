@@ -1,0 +1,56 @@
+api-gateway-url: http:/localhost:8081
+app:
+  title: "ORDER-SERVICE"
+  version: "1.0.0"
+  description: "API documentation for My Order Service Microservice"
+  url: ${api-gateway-url}
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommercems
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  banner:
+    location: banner.txt
+  rabbitmq:
+    password: guest
+    username: guest
+    port: 5672
+    host: localhost
+api:
+  url: "/api/v1/order"
+server:
+  port: 0
+rsa:
+  public-key: classpath:certs/public.pem
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0
+springdoc:
+  api-docs:
+    path: ${api.url}/v3/api-docs
+  swagger-ui:
+    path: ${api.url}/docs

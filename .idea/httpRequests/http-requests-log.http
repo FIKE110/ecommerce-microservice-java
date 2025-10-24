@@ -1,3 +1,57 @@
+GET http://localhost:9091/docs/scalar-docs
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-23T040420.500.json
+
+###
+
+GET http://localhost:9091/docs/scalar-docs
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-23T040416.500.json
+
+###
+
+GET http://localhost:9091/docs/scalar-docs
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-23T040215.500.json
+
+###
+
+GET http://localhost:9091/docs/scalar-docs
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-23T035656.500.json
+
+###
+
+GET http://localhost:32917/v3/api-docs
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-09-06T210218.200.json
+
+###
+
+GET http://localhost:45693/swagger-ui.html
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-09-06T195401.200.html
+
+###
+
 GET http://localhost:8080/api/v1/auth/public-key
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
 Accept-Encoding: br, deflate, gzip, x-gzip

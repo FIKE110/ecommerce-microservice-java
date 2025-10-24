@@ -1,6 +1,7 @@
 package com.fortune.auth.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fortune.CustomException;
 import com.fortune.auth.Response.Token;
 import com.fortune.auth.entity.Customer;
 import com.fortune.auth.enumeration.AuthMethod;
@@ -82,5 +83,14 @@ public class AuthService {
     }
     public void sendOtp(String email) {
         tokenService.generateVerificationOtp(email);
+    }
+
+    public Map<String,String> getProfile(String username) {
+        Customer customer=customerRepository.findByUsername(username).orElseThrow(()->new CustomException("Error occurred"));
+
+        return Map.of(
+                "email",customer.getEmail(),
+                "phone",customer.getPhoneNumber()
+        );
     }
 }

@@ -1,0 +1,133 @@
+export interface Product {
+  id: number
+  name: string
+  price: number
+  description: string
+  image: string
+  category: string
+  rating: number
+  reviews: number
+}
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Premium Wireless Headphones",
+    price: 299,
+    description: "High-quality wireless headphones with noise cancellation",
+    image: "/premium-wireless-headphones.png",
+    category: "Electronics",
+    rating: 4.8,
+    reviews: 324,
+  },
+  {
+    id: 2,
+    name: "Minimalist Watch",
+    price: 199,
+    description: "Elegant minimalist design with premium materials",
+    image: "/minimalist-luxury-watch.jpg",
+    category: "Accessories",
+    rating: 4.9,
+    reviews: 156,
+  },
+  {
+    id: 3,
+    name: "Designer Sunglasses",
+    price: 249,
+    description: "UV protection with timeless design",
+    image: "/designer-sunglasses.png",
+    category: "Accessories",
+    rating: 4.7,
+    reviews: 89,
+  },
+  {
+    id: 4,
+    name: "Leather Messenger Bag",
+    price: 349,
+    description: "Premium leather construction with multiple compartments",
+    image: "/leather-messenger-bag.png",
+    category: "Bags",
+    rating: 4.8,
+    reviews: 203,
+  },
+  {
+    id: 5,
+    name: "Ceramic Coffee Set",
+    price: 89,
+    description: "Handcrafted ceramic coffee cups and saucers",
+    image: "/ceramic-coffee-set.png",
+    category: "Home",
+    rating: 4.6,
+    reviews: 142,
+  },
+  {
+    id: 6,
+    name: "Luxury Pen Set",
+    price: 159,
+    description: "Premium writing instruments with elegant design",
+    image: "/luxury-pen-set.jpg",
+    category: "Stationery",
+    rating: 4.9,
+    reviews: 78,
+  },
+  {
+    id: 7,
+    name: "Silk Scarf",
+    price: 129,
+    description: "100% pure silk with vibrant patterns",
+    image: "/flowing-silk-scarf.png",
+    category: "Fashion",
+    rating: 4.7,
+    reviews: 95,
+  },
+  {
+    id: 8,
+    name: "Stainless Steel Water Bottle",
+    price: 49,
+    description: "Keeps drinks cold for 24 hours or hot for 12 hours",
+    image: "/stainless-steel-bottle.png",
+    category: "Sports",
+    rating: 4.8,
+    reviews: 512,
+  },
+  {
+    id: 9,
+    name: "Marble Desk Organizer",
+    price: 79,
+    description: "Natural marble with brass accents",
+    image: "/marble-desk-organizer.jpg",
+    category: "Home",
+    rating: 4.6,
+    reviews: 67,
+  },
+  {
+    id: 10,
+    name: "Premium Skincare Set",
+    price: 199,
+    description: "Complete skincare routine with natural ingredients",
+    image: "/premium-skincare-set.jpg",
+    category: "Beauty",
+    rating: 4.9,
+    reviews: 289,
+  },
+  {
+    id: 11,
+    name: "Wool Throw Blanket",
+    price: 139,
+    description: "Soft merino wool blend for ultimate comfort",
+    image: "/wool-throw-blanket.jpg",
+    category: "Home",
+    rating: 4.8,
+    reviews: 156,
+  },
+  {
+    id: 12,
+    name: "Bluetooth Speaker",
+    price: 179,
+    description: "Portable speaker with 360-degree sound",
+    image: "/bluetooth-speaker.jpg",
+    category: "Electronics",
+    rating: 4.7,
+    reviews: 234,
+  },
+]

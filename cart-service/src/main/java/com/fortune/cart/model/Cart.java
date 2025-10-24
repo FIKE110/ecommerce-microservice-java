@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.assertj.core.util.Lists;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,5 +17,5 @@ import java.util.UUID;
 @Builder
 public class Cart {
     private UUID id=UUID.randomUUID();
-    private HashMap<String,Integer> items=new HashMap<>();
+    private HashMap<String,Map<String,Double>> items=new HashMap<>();
 }

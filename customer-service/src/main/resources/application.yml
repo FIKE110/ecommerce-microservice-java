@@ -1,3 +1,15 @@
+api-gateway-url: http:/localhost:8081
+app:
+  title: "CUSTOMER-SERVICE"
+  version: "1.0.0"
+  description: "API documentation for My Customer Service Microservice"
+  url: ${api-gateway-url}
+springdoc:
+  swagger-ui:
+    path: /api/v1/customer/docs
+  api-docs:
+    path: /api/v1/customer/v3/api-docs
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ecommercems

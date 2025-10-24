@@ -2,6 +2,7 @@ package com.fortune.inventory.service;
 
 import com.fortune.Event;
 import com.fortune.EventType;
+import com.fortune.inventory.config.RabbitMQConfig;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
@@ -22,10 +23,15 @@ public class RabbitMQService {
     @RabbitListener(queues = QUEUE_NAME)
     public void receiveMessage(Event event) {
         if(event.getEventType().equals(EventType.PRODUCT_CREATED)){
-            Map<String,String> message = event.getMessage();
+            Map<String,String> message = (Map<String, String>) event.getMessage();
             UUID productId = UUID.fromString(message.get("id"));
             Long quantity = Long.parseLong(message.get("quantity"));
             inventoryService.intializeStock(productId,quantity);
         }
+    }
+
+    @RabbitListener(queues = RabbitMQConfig.QUEUE_NAME)
+    public void receiveFanoutMessage(Event event) {
+       System.out.println(event);
     }
 }

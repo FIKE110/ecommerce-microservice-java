@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Scalar API Reference</title>
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<div id="app"></div>
+
+<!-- Load the Script -->
+<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.34.0"></script>
+
+<!-- Initialize the Scalar API Reference -->
+<script>
+    Scalar.createApiReference('#app', {
+        sources: [
+            {
+                title: 'auth-service',
+                slug: 'auth-service',
+                url: 'http://localhost:8081/api/v1/auth/v3/api-docs',
+            },
+            {
+                title: 'user-service',
+                slug: 'user-service',
+                url: 'http://localhost:8081/api/v1/customer/v3/api-docs',
+            },
+            {
+                title: 'payments-service',
+                slug: 'payments-service',
+                url: 'http://localhost:8081/api/v1/payment/v3/api-docs',
+            },
+            {
+                title: 'cart-service',
+                slug: 'cart-service',
+                url: 'http://localhost:8081/api/v1/cart/v3/api-docs',
+            },
+            {
+                title: 'order-service',
+                slug: 'order-service',
+                url: 'http://localhost:8081/api/v1/order/v3/api-docs',
+            },
+            {
+                title: 'product-service',
+                slug: 'product-service',
+                url: 'http://localhost:8081/api/v1/product/v3/api-docs',
+            },
+        ]
+        ,
+        proxyUrl: 'https://proxy.scalar.com',
+    })
+</script>
+</body>
+</html>

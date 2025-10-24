@@ -1,13 +1,11 @@
 package com.fortune.customer.controller;
 
+import com.fortune.*;
 import com.fortune.MessageInString;
 import com.fortune.customer.dto.CustomerProfileDto;
-import com.fortune.customer.entity.CustomerProfile;
 import com.fortune.customer.enumeration.CustomerResponseCode;
-import com.fortune.customer.request.ApiDataResponse;
 import com.fortune.customer.request.CustomerCreateRequest;
 import com.fortune.customer.request.CustomerUpdateRequest;
-import com.fortune.customer.request.DataWrapper;
 import com.fortune.customer.service.CustomerProfileService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -28,15 +26,13 @@ public class CustomerController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<ApiDataResponse<DataWrapper<CustomerResponseCode, MessageInString>>> createCustomerProfile(@AuthenticationPrincipal Jwt jwt,@RequestBody @Valid CustomerCreateRequest customerRequest) {
+    public ResponseEntity<ApiDataResponse<DataWrapper<CustomerResponseCode, MessageInString>>> createCustomerProfile(@AuthenticationPrincipal Jwt jwt, @RequestBody @Valid CustomerCreateRequest customerRequest) {
         customerProfileService.createCustomerProfile(jwt.getSubject(), customerRequest);
         return ResponseEntity.status(HttpStatus.CREATED).body(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
+                ApiResponse.data(
                                 CustomerResponseCode.PROFILE_CREATED,
                                 new MessageInString("Profile successfully created")
                         )
-                )
         );
     }
 
@@ -45,12 +41,10 @@ public class CustomerController {
     public ResponseEntity<ApiDataResponse<DataWrapper<CustomerResponseCode,CustomerProfileDto>>> getCustomerProfile(@AuthenticationPrincipal Jwt jwt) {
         CustomerProfileDto profile=customerProfileService.getCustomerProfile(jwt.getSubject());
         return ResponseEntity.ok(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
+              ApiResponse.data(
                                 CustomerResponseCode.PROFILE_FETCHED,
                                 profile
                         )
-                )
         );
     }
 
@@ -59,12 +53,11 @@ public class CustomerController {
     public ResponseEntity<ApiDataResponse<DataWrapper<CustomerResponseCode, MessageInString>>> createCustomerProfile(@AuthenticationPrincipal Jwt jwt,@RequestBody @Valid CustomerUpdateRequest customerRequest) {
         customerProfileService.updateCustomerProfile(jwt.getSubject(),customerRequest);
         return ResponseEntity.status(HttpStatus.CREATED).body(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
+                ApiResponse.data(
                                 CustomerResponseCode.PROFILE_CREATED,
                                 new MessageInString("Profile updated successfully")
                         )
-                )
         );
     }
+
 }

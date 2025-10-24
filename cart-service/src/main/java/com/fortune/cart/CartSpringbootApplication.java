@@ -1,6 +1,8 @@
 package com.fortune.cart;
 
+import com.fortune.cart.config.AppConfigProp;
 import com.fortune.cart.config.RsaProperties;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.client.RestTemplateBuilderConfigurer;
@@ -15,8 +17,9 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableConfigurationProperties(RsaProperties.class)
+@EnableConfigurationProperties({RsaProperties.class, AppConfigProp.class})
 @EnableFeignClients
+@EnableRabbit
 public class CartSpringbootApplication{
     public static void main(String[] args) {
         SpringApplication.run(CartSpringbootApplication.class, args);

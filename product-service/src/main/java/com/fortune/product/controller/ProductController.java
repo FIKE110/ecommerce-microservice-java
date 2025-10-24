@@ -1,6 +1,7 @@
 package com.fortune.product.controller;
 
 import com.fortune.ApiDataResponse;
+import com.fortune.ApiResponse;
 import com.fortune.DataWrapper;
 import com.fortune.MessageInString;
 import com.fortune.product.dto.ProductDto;
@@ -16,6 +17,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
 import java.util.UUID;
 
 @RestController
@@ -33,12 +35,10 @@ public class ProductController {
     public ResponseEntity<ApiDataResponse<DataWrapper<ProductResponseCode, MessageInString>>> createProduct(@AuthenticationPrincipal Jwt jwt, @RequestBody @Valid  ProductRequest request) {
         productService.createProduct(jwt.getSubject(),request);
         return ResponseEntity.status(HttpStatus.CREATED).body(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
+               ApiResponse.data(
                                 ProductResponseCode.PRODUCT_CREATED,
                                 new MessageInString("Product created successfully")
                         )
-                )
         );
     }
 
@@ -46,13 +46,20 @@ public class ProductController {
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<ApiDataResponse<DataWrapper<ProductResponseCode, Product>>> getProductById(@PathVariable("id") UUID id) {
         return ResponseEntity.ok(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
+              ApiResponse.data(
                                 ProductResponseCode.PRODUCT_FETCHED,
                                 productService.getProductById(id)
                         )
 
-        ));
+        );
+    }
+
+    @GetMapping("/{id}/price")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<Map<String,Double>> getProductPriceById(@PathVariable("id") UUID id) {
+        return ResponseEntity.ok(
+                        Map.of("price",productService.getProductPriceById(id))
+        );
     }
 
     @GetMapping
@@ -62,13 +69,11 @@ public class ProductController {
             @RequestParam(value = "size",defaultValue = "1") Integer size
     ) {
         return ResponseEntity.ok(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
-                                ProductResponseCode.PRODUCTS_FETCHED,
-                                productService.getProducts(page, size, sort)
-                        )
-
-                ));
+                ApiResponse.data(
+                        ProductResponseCode.PRODUCTS_FETCHED,
+                        productService.getProducts(page, size, sort)
+                )
+                );
     }
 
     @PutMapping("/{id}")
@@ -76,13 +81,12 @@ public class ProductController {
     public ResponseEntity<ApiDataResponse<DataWrapper<ProductResponseCode, MessageInString>>> updateProduct(@PathVariable("id") UUID id, @RequestBody @Valid ProductRequest request) {
         productService.updateProduct(id, request);
         return ResponseEntity.ok(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
+                ApiResponse.data(
                                 ProductResponseCode.PRODUCT_UPDATED,
                                 new MessageInString("Product is updated")
                         )
 
-                ));
+                );
     }
 
     @DeleteMapping("/{id}")
@@ -90,13 +94,12 @@ public class ProductController {
     public ResponseEntity<ApiDataResponse<DataWrapper<ProductResponseCode, MessageInString>>> createProduct(@PathVariable("id") UUID id) {
         productService.deleteProductById(id);
         return ResponseEntity.ok(
-                new ApiDataResponse<>(
-                        new DataWrapper<>(
+               ApiResponse.data(
                                 ProductResponseCode.PRODUCT_DELETED,
                              new  MessageInString("Product deleted")
                         )
 
-                ));
+                );
     }
 
 }

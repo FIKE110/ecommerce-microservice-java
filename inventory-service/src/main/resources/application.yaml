@@ -1,3 +1,9 @@
+api-gateway-url: http:/localhost:8081
+app:
+  title: "INVENTORY-SERVICE"
+  version: "1.0.0"
+  description: "API documentation for My Inventory Service Microservice"
+  url: ${api-gateway-url}
 spring:
   banner:
     location: banner.txt

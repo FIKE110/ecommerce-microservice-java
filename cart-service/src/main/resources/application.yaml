@@ -1,3 +1,9 @@
+api-gateway-url: http:/localhost:8081
+app:
+  title: "CART-SERVICE"
+  version: "1.0.0"
+  description: "API documentation for My Cart Service Microservice"
+  url: ${api-gateway-url}
 spring:
   application:
     name: cart-service
@@ -12,6 +18,11 @@ spring:
     show-sql: true
   banner:
     location: banner.txt
+  rabbitmq:
+    password: guest
+    username: guest
+    port: 5672
+    host: localhost
 api:
   url: "/api/v1/cart"
 server:
@@ -38,3 +49,8 @@ management:
   tracing:
     sampling:
       probability: 1.0
+springdoc:
+  api-docs:
+    path: /api/v1/cart/v3/api-docs
+  swagger-ui:
+    path: /api/v1/cart/docs

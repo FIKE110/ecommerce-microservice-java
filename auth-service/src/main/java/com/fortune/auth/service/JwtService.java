@@ -48,7 +48,7 @@ public class JwtService {
         Customer customer = (Customer) authentication.getPrincipal();
         Instant now = Instant.now();
         JwtClaimsSet claims=JwtClaimsSet.builder()
-                .expiresAt(now.plus(1, ChronoUnit.HOURS))
+                .expiresAt(now.plus(1, ChronoUnit.DAYS))
                 .issuer("self")
                 .issuedAt(now)
                 .claim("scope",scope)
@@ -74,7 +74,7 @@ public class JwtService {
         var customer = (Customer) authentication.getPrincipal();
         Instant now = Instant.now();
         JwtClaimsSet claims=JwtClaimsSet.builder()
-                .expiresAt(now.plus(1, ChronoUnit.HOURS))
+                .expiresAt(now.plus(1, ChronoUnit.DAYS))
                 .issuer("refresh")
                 .issuedAt(now)
                 .claim("scope",scope)

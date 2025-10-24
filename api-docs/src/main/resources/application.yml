@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: api-docs-service
+api-gateway:
+  url: http://localhost:8081
+springdoc:
+  swagger-ui:
+    urls:
+      - name: auth-service
+        url: ${api-gateway.url}/api/v1/auth/v3/api-docs
+      - name: user-service
+        url:  ${api-gateway.url}/users/v3/api-docs
+      - name: payments-service
+        url:  ${api-gateway.url}/payments/v3/api-docs
+      - name: cart-service
+        url:  ${api-gateway.url}/cart/v3/api-docs
+      - name: order-service
+        url: ${api-gateway.url}/order/v3/api-docs
+      - name: product-service
+        url: ${api-gateway.url}/product/v3/api-docs
+    path: /docs
+server:
+  port: 9091
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0

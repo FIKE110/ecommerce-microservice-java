@@ -1,3 +1,9 @@
+api-gateway-url: http:/localhost:8081
+app:
+  title: "PRODUCT-SERVICE"
+  version: "1.0.0"
+  description: "API documentation for My Product Service Microservice"
+  url: ${api-gateway-url}
 spring:
   banner:
     location: banner.txt
@@ -38,3 +44,8 @@ management:
   tracing:
     sampling:
       probability: 1.0
+springdoc:
+  swagger-ui:
+    path: ${api.url}/docs
+  api-docs:
+    path: ${api.url}/v3/api-docs
