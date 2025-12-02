@@ -2,11 +2,26 @@
 
 import Link from "next/link"
 import { ShoppingCart, Search, Menu, X } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react" // Import useEffect
 import { Button } from "@/components/ui/button"
+import { getMetrics } from "@/lib/research-api" // Import getMetrics
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [metrics, setMetrics] = useState<any>(null) // State to store metrics
+  const [metricsError, setMetricsError] = useState<string | null>(null) // State to store metrics error
+
+  useEffect(() => {
+    const fetchMetrics = async () => {
+      try {
+        const data = await getMetrics()
+        setMetrics(data)
+      } catch (error: any) {
+        setMetricsError(error.message)
+      }
+    }
+    fetchMetrics()
+  }, [])
 
   const featuredProducts = [
     {
@@ -138,6 +153,26 @@ export default function LandingPage() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Metrics Section */}
+      <section className="bg-background py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-8">Application Metrics</h2>
+          {metricsError && <p className="text-red-500 text-center">Error fetching metrics: {metricsError}</p>}
+          {metrics ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {Object.entries(metrics).map(([key, value]) => (
+                <div key={key} className="bg-secondary/30 p-6 rounded-lg shadow-md">
+                  <h3 className="text-xl font-semibold mb-2">{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</h3>
+                  <p className="text-lg text-muted-foreground">{JSON.stringify(value)}</p>
+                </div>
+              ))}
+            </div>
+          ) : (
+            !metricsError && <p className="text-center">Loading metrics...</p>
+          )}
         </div>
       </section>
 

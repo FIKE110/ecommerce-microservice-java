@@ -1,5 +1,6 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
+import { saveKey } from "./keystore-service"
 
 export interface User {
   id: string
@@ -13,7 +14,7 @@ interface AuthStore {
   isLoading: boolean
   error: string | null
   login: (email: string, password: string) => Promise<void>
-  signup: (email: string, password: string, name: string) => Promise<void>
+  signup: (email: string, password: string, username: string, phoneNumber: string) => Promise<void>
   logout: () => void
   clearError: () => void
 }
@@ -28,22 +29,31 @@ export const useAuthStore = create<AuthStore>()(
       login: async (email: string, password: string) => {
         set({ isLoading: true, error: null })
         try {
-          // Simulate API call
-          await new Promise((resolve) => setTimeout(resolve, 1000))
+          const response = await fetch(`${process.env.NEXT_PUBLIC_GATEWAY_URL}/api/v1/auth/sign-in`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email, password }),
+          })
 
-          // Mock validation
-          if (!email || !password) {
-            throw new Error("Email and password are required")
+          if (!response.ok) {
+            const errorData = await response.json()
+            throw new Error(errorData.message || "Login failed")
           }
 
+          const data = await response.json()
           const user: User = {
-            id: Math.random().toString(36).substr(2, 9),
-            email,
-            name: email.split("@")[0],
-            token: "mock-jwt-token-" + Math.random().toString(36).substr(2, 9),
+            id: data.id, // Assuming the API returns the user object
+            email: data.email,
+            name: data.name,
+            token: data.token,
           }
 
           set({ user, isLoading: false })
+          console.log(data)
+          saveKey("access_token", data.data.data.accessToken)
+          saveKey("refresh_token", data.data.data.refreshToken)
         } catch (error) {
           set({
             error: error instanceof Error ? error.message : "Login failed",
@@ -53,29 +63,23 @@ export const useAuthStore = create<AuthStore>()(
         }
       },
 
-      signup: async (email: string, password: string, name: string) => {
+      signup: async (email: string, password: string, username: string, phoneNumber: string) => {
         set({ isLoading: true, error: null })
         try {
-          // Simulate API call
-          await new Promise((resolve) => setTimeout(resolve, 1000))
+          const response = await fetch(`${process.env.NEXT_PUBLIC_GATEWAY_URL}/api/v1/auth/sign-up`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email, password, username, phoneNumber }),
+          })
 
-          // Mock validation
-          if (!email || !password || !name) {
-            throw new Error("All fields are required")
+          if (!response.ok) {
+            const errorData = await response.json()
+            throw new Error(errorData.message || "Signup failed")
           }
 
-          if (password.length < 6) {
-            throw new Error("Password must be at least 6 characters")
-          }
-
-          const user: User = {
-            id: Math.random().toString(36).substr(2, 9),
-            email,
-            name,
-            token: "mock-jwt-token-" + Math.random().toString(36).substr(2, 9),
-          }
-
-          set({ user, isLoading: false })
+          set({ isLoading: false })
         } catch (error) {
           set({
             error: error instanceof Error ? error.message : "Signup failed",

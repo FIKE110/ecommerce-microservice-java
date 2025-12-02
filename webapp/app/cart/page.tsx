@@ -33,7 +33,7 @@ export default function CartPage() {
               LUXE
             </Link>
 
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden xmd:flex items-center gap-8">
               <Link href="/products" className="text-sm hover:text-primary transition-colors">
                 Shop
               </Link>

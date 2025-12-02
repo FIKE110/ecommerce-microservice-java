@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { useAuthStore } from "@/lib/auth-store"
 import { AlertCircle, Loader2 } from "lucide-react"
+import { saveKey } from "@/lib/keystore-service"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -20,7 +21,10 @@ export default function LoginPage() {
     clearError()
 
     try {
-      await login(email, password)
+      const res=await login(email, password)
+      console.log(res)
+      // saveKey("access_token",res.data.access_token)
+      // saveKey("refresh_token",res.data.refresh_token)
       router.push("/products")
     } catch {
       // Error is handled by the store

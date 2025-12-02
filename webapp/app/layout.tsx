@@ -1,3 +1,4 @@
+import { Toaster } from "sonner"
 import type React from "react"
 import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfairDisplay.variable} ${inter.variable}`}>
       <body className={`font-sans antialiased`}>
         {children}
+        <Toaster />
         <Analytics />
       </body>
     </html>

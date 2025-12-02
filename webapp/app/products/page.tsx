@@ -1,48 +1,75 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import Link from "next/link"
 import { ShoppingCart, Search, Menu, X } from "lucide-react"
-import { products } from "@/lib/products-data"
+// import { products } from "@/lib/products-data"
 import { useCartStore } from "@/lib/cart-store"
+import { get } from "http"
+import { getKey } from "@/lib/keystore-service"
 
 export default function ProductsPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [sortBy, setSortBy] = useState("featured")
+  const [products, setProducts] = useState<any[]>([])
   const { addItem } = useCartStore()
 
   const categories = ["All", "Electronics", "Accessories", "Bags", "Home", "Fashion", "Stationery", "Sports", "Beauty"]
+
+   useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        // setLoading(true)
+        const res = await fetch(`${process.env.NEXT_PUBLIC_GATEWAY_URL}/api/v1/product`,{
+          headers: {
+            'Content-Type': 'application/json',
+            "Authorization": `Bearer ${getKey("access_token")}`
+          },
+        }) 
+        if (!res.ok) throw new Error("Failed to fetch products")
+        const data = await res.json()
+        console.log(data.data.data.content)
+        setProducts(data.data.data.content)
+      } catch (err: any) {
+        // setError(err.message)
+      } finally {
+        // setLoading(false)
+      }
+    }
+
+    fetchProducts()
+  }, [])
 
   const filteredProducts = useMemo(() => {
     let filtered = products
 
     // Filter by category
-    if (selectedCategory !== "All") {
-      filtered = filtered.filter((p) => p.category === selectedCategory)
-    }
+    // if (selectedCategory !== "All") {
+    //   filtered = filtered.filter((p) => p.category === selectedCategory)
+    // }
 
-    // Filter by search query
-    if (searchQuery) {
-      filtered = filtered.filter(
-        (p) =>
-          p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          p.description.toLowerCase().includes(searchQuery.toLowerCase()),
-      )
-    }
+    // // Filter by search query
+    // if (searchQuery) {
+    //   filtered = filtered.filter(
+    //     (p) =>
+    //       p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    //       p.description.toLowerCase().includes(searchQuery.toLowerCase()),
+    //   )
+    // }
 
-    // Sort
-    if (sortBy === "price-low") {
-      filtered = [...filtered].sort((a, b) => a.price - b.price)
-    } else if (sortBy === "price-high") {
-      filtered = [...filtered].sort((a, b) => b.price - a.price)
-    } else if (sortBy === "rating") {
-      filtered = [...filtered].sort((a, b) => b.rating - a.rating)
-    }
+    // // Sort
+    // if (sortBy === "price-low") {
+    //   filtered = [...filtered].sort((a, b) => a.price - b.price)
+    // } else if (sortBy === "price-high") {
+    //   filtered = [...filtered].sort((a, b) => b.price - a.price)
+    // } else if (sortBy === "rating") {
+    //   filtered = [...filtered].sort((a, b) => b.rating - a.rating)
+    // }
 
     return filtered
-  }, [searchQuery, selectedCategory, sortBy])
+  }, [searchQuery, selectedCategory, sortBy,products])
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -169,7 +196,7 @@ export default function ProductsPage() {
                     <Link href={`/products/${product.id}`}>
                       <div className="relative overflow-hidden rounded-xl mb-4 bg-muted h-64 cursor-pointer">
                         <img
-                          src={product.image || "/placeholder.svg"}
+                          src={product.images[0] || "/placeholder.svg"}
                           alt={product.name}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
@@ -196,7 +223,7 @@ export default function ProductsPage() {
                             </span>
                           ))}
                         </div>
-                        <span className="text-sm text-muted-foreground">({product.reviews})</span>
+                        {/* <span className="text-sm text-muted-foreground">({product.reviews})</span> */}
                       </div>
 
                       {/* Price and Button */}

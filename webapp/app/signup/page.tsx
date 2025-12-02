@@ -8,11 +8,13 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { useAuthStore } from "@/lib/auth-store"
 import { AlertCircle, Loader2 } from "lucide-react"
+import { toast } from "sonner"
 
 export default function SignupPage() {
   const router = useRouter()
   const { signup, isLoading, error, clearError } = useAuthStore()
-  const [name, setName] = useState("")
+  const [username, setUsername] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [confirmPassword, setConfirmPassword] = useState("")
@@ -27,8 +29,9 @@ export default function SignupPage() {
     }
 
     try {
-      await signup(email, password, name)
-      router.push("/products")
+      await signup(email, password, username, phoneNumber)
+      toast.success("Signup successful! Please sign in.")
+      router.push("/login")
     } catch {
       // Error is handled by the store
     }
@@ -56,17 +59,33 @@ export default function SignupPage() {
             </div>
           )}
 
-          {/* Name Input */}
+          {/* Username Input */}
           <div className="space-y-2">
-            <label htmlFor="name" className="text-sm font-medium">
-              Full Name
+            <label htmlFor="username" className="text-sm font-medium">
+              Username
             </label>
             <input
-              id="name"
+              id="username"
               type="text"
-              placeholder="John Doe"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              placeholder="john.doe"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="w-full px-4 py-2 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+              disabled={isLoading}
+            />
+          </div>
+
+          {/* Phone Number Input */}
+          <div className="space-y-2">
+            <label htmlFor="phoneNumber" className="text-sm font-medium">
+              Phone Number
+            </label>
+            <input
+              id="phoneNumber"
+              type="text"
+              placeholder="+1234567890"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               className="w-full px-4 py-2 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
               disabled={isLoading}
             />

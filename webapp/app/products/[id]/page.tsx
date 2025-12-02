@@ -1,23 +1,51 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { useParams } from "next/navigation"
 import { ShoppingCart, Search, Menu, X, ChevronLeft, ChevronRight, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { products } from "@/lib/products-data"
 import { useCartStore } from "@/lib/cart-store"
+import { getKey } from "@/lib/keystore-service"
+import { saveItemInCart } from "@/lib/cart-service"
 
 export default function ProductDetailsPage() {
   const params = useParams()
-  const productId = Number(params.id)
-  const product = products.find((p) => p.id === productId)
+  const productId = params.id
+  // const product = products.find((p) => p.id === productId)
   const { addItem } = useCartStore()
 
   const [quantity, setQuantity] = useState(1)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isFavorite, setIsFavorite] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [product, setProduct] = useState<any>(null)
+
+
+  useEffect(() => {
+      const fetchProducts = async () => {
+        try {
+          // setLoading(true)
+          const res = await fetch(`${process.env.NEXT_PUBLIC_GATEWAY_URL}/api/v1/product/${productId}`,{
+            headers: {
+              'Content-Type': 'application/json',
+              "Authorization": `Bearer ${getKey("access_token")}`
+            },
+          }) 
+          if (!res.ok) throw new Error("Failed to fetch products")
+          const data = await res.json()
+          console.log(data.data.data.content)
+          setProduct(data.data.data)
+        } catch (err: any) {
+          // setError(err.message)
+        } finally {
+          // setLoading(false)
+        }
+      }
+  
+      fetchProducts()
+    }, [])
 
   if (!product) {
     return (
@@ -37,6 +65,7 @@ export default function ProductDetailsPage() {
 
   const handleAddToCart = () => {
     addItem(product, quantity)
+    saveItemInCart(productId?.toString() as string,quantity)
     setQuantity(1)
   }
 
