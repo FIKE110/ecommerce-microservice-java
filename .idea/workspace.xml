@@ -6,32 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="74a478c6-c4ae-4b0d-9c87-dad162f76c2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/fortune/cart/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/dto/CustomerProfileDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/dto/CustomerProfileDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/service/CustomerProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/fortune/customer/service/CustomerProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/InventorySpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/InventorySpringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/fortune/inventory/service/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/config/PaymentClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/config/PaymentClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/enumeration/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/enumeration/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/model/ProductItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/model/ProductItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/config/PaymentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/config/PaymentResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/repository/PaymentResponseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/fortune/payment/repository/PaymentResponseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/ProductServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/dto/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/admin-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/admin-server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/api-gateway.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/api-gateway.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/auth-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth-service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cart-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/customer-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/customer-service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/inventory-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/inventory-service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/payment-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/payment-service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/product-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/product-service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/service-discovery.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/service-discovery.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +358,7 @@
       <workItem from="1761248719535" duration="26879000" />
       <workItem from="1761337994800" duration="2014000" />
       <workItem from="1769763143915" duration="7443000" />
-      <workItem from="1769783406601" duration="3684000" />
+      <workItem from="1769783406601" duration="7200000" />
     </task>
     <servers />
   </component>
