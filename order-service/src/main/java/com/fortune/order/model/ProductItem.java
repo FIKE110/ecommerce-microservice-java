@@ -1,20 +1,21 @@
 package com.fortune.order.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
 
 //@Entity
-@Data
+@Setter
+@Getter
 @Builder
+@Embeddable
+@NoArgsConstructor
+@AllArgsConstructor
 public class ProductItem{
-
     private UUID productId;
+    private String productName;
     private Long quantity;
     private Double price;
 }

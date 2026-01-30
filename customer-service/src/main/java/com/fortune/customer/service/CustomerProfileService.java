@@ -31,7 +31,7 @@ public class CustomerProfileService {
 
     public CustomerProfileDto getCustomerProfile(String customer) {
          CustomerProfile profile=customerProfileRepository.findByUsername(customer).orElseThrow(()-> new RuntimeException("Customer not found"));
-         return new CustomerProfileDto(profile.getFirstName(), profile.getLastName(), profile.getAddress(),profile.getBirthDate(),profile.getGender());
+         return new CustomerProfileDto(customer,profile.getFirstName(), profile.getLastName(), profile.getAddress(),profile.getBirthDate(),profile.getGender());
     }
 
     @Transactional

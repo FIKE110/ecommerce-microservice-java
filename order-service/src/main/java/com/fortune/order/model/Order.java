@@ -27,11 +27,12 @@ public class Order {
     private UUID id;
     private String username;
     private BigDecimal totalPrice;
+    private String paymentLink;
     private LocalDateTime orderTime;
     private LocalDateTime deliveryTime;
     private LocalDateTime shippingTime;
-//    @ElementCollection
-//    private List<ProductItem> products;
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<ProductItem> products;
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
     private String txnReference;

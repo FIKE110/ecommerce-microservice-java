@@ -56,10 +56,48 @@ public class CartService {
        save(username,cart);
     }
 
+    public void addToCart(Jwt jwt, String productId, Long q) {
+
+        if (q == null || q <= 0) {
+            throw new IllegalArgumentException("Quantity must be greater than zero");
+        }
+
+        if (!productExists(jwt, productId)) {
+            throw new RuntimeException("Product does not exist");
+        }
+
+        String username = jwt.getSubject();
+        Cart cart = get(username);
+
+        if (cart == null) {
+            cart = new Cart();
+        }
+
+        Double price = productPrice(jwt, productId);
+        if (price == null) {
+            throw new RuntimeException("Product price does not exist");
+        }
+
+        Map<String, Double> item = cart.getItems().get(productId);
+
+        double existingQty = item != null ? item.get("quantity") : 0.0;
+        double newQty = existingQty + q;
+
+        // IMPORTANT: Map.of() creates an immutable map → use HashMap
+        Map<String, Double> newItem = new HashMap<>();
+        newItem.put("quantity", newQty);
+        newItem.put("price", price);
+
+        cart.getItems().put(productId, newItem);
+
+        save(username, cart);
+    }
+
+
     public void removeFromCart(Jwt jwt,String productId) {
         if(!productExists(jwt, productId)) throw new RuntimeException("product does not exist");
         String username=jwt.getSubject();
-        Cart cart= redisTemplate.opsForValue().get(username);
+        Cart cart= redisTemplate.opsForValue().get(username+"@CART");
         assert cart != null;
         cart.getItems().remove(productId);
         save(username,cart);

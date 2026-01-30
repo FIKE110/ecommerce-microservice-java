@@ -10,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 @RestController
 @RequestMapping({"${api.url}/","${api.url}"})
@@ -33,6 +35,11 @@ public class InventoryController {
     @GetMapping("{id}")
     public ResponseEntity<Inventory> getInventory(@PathVariable("id") Long id) {
         return ResponseEntity.ok(inventoryService.findById(id));
+    }
+
+    @GetMapping("/product/{id}")
+    public Map<String,String> getProductInventory(@PathVariable("id") UUID id){
+        return inventoryService.getQuantity(id);
     }
 
     @GetMapping("/in-stock")

@@ -33,6 +33,12 @@ public class CartController {
        return ResponseEntity.noContent().build();
     }
 
+    @PostMapping("/{productId}/add/{quantity}")
+    public ResponseEntity<?> saveInCache(@AuthenticationPrincipal Jwt jwt, @PathVariable("productId") UUID productId,@PathVariable("quantity") Long quantity) {
+        cartService.addToCart(jwt,productId.toString(),quantity);
+        return ResponseEntity.noContent().build();
+    }
+
     @PostMapping("/{productId}/remove")
     public ResponseEntity<?> removeFromCache(@AuthenticationPrincipal Jwt jwt,@PathVariable("productId") UUID productId) {
         cartService.decreaseProductInCart(jwt,productId.toString());

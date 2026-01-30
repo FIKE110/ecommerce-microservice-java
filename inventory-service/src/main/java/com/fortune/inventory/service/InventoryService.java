@@ -9,6 +9,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -28,6 +29,11 @@ public class InventoryService {
 
     public Inventory findById(Long id) {
         return inventoryRepository.findById(id).orElseThrow(()->new RuntimeException("Inventory not found"));
+    }
+
+    public Map<String,String> getQuantity(UUID id) {
+        return Map.of("quantity",inventoryRepository.findInventoryByProductId(id).orElseThrow(()->new RuntimeException("Prodcut not found"))
+                .getQuantity().toString());
     }
 
     public List<Inventory> outOfStock() {

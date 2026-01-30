@@ -1,0 +1,213 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.fortune:service-discovery[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding service-discovery 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mservice-discovery[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mservice-discovery[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mservice-discovery[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mservice-discovery[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/fortune/Documents/projects/ecommerce/service-discovery/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mservice-discovery[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mservice-discovery[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[m @ [36mservice-discovery[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+███████╗███████╗██████╗ ██╗   ██╗██╗ ██████╗███████╗
+██╔════╝██╔════╝██╔══██╗██║   ██║██║██╔════╝██╔════╝
+███████╗█████╗  ██████╔╝██║   ██║██║██║     █████╗
+╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██║██║     ██╔══╝
+███████║███████╗██║  ██║ ╚████╔╝ ██║╚██████╗███████╗
+╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝ ╚═════╝╚══════╝
+
+██████╗ ██╗███████╗ ██████╗ ██████╗ ██╗   ██╗███████╗██████╗ ██╗   ██╗
+██╔══██╗██║██╔════╝██╔════╝██╔═══██╗██║   ██║██╔════╝██╔══██╗╚██╗ ██╔╝
+██║  ██║██║███████╗██║     ██║   ██║██║   ██║█████╗  ██████╔╝ ╚████╔╝
+██║  ██║██║╚════██║██║     ██║   ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗  ╚██╔╝
+██████╔╝██║███████║╚██████╗╚██████╔╝ ╚████╔╝ ███████╗██║  ██║   ██║
+╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝   ╚═╝
+
+2026-01-30T16:16:25.156+01:00  INFO 23760 --- [service-discovery] [           main] c.f.d.ServiceDiscoveryApplication        : Starting ServiceDiscoveryApplication using Java 25.0.2 with PID 23760 (/home/fortune/Documents/projects/ecommerce/service-discovery/target/classes started by fortune in /home/fortune/Documents/projects/ecommerce/service-discovery)
+2026-01-30T16:16:25.157+01:00  INFO 23760 --- [service-discovery] [           main] c.f.d.ServiceDiscoveryApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-30T16:16:26.291+01:00  INFO 23760 --- [service-discovery] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fa453ca5-874d-39ca-9c5f-b5cebcc3d761
+2026-01-30T16:16:26.615+01:00  INFO 23760 --- [service-discovery] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-01-30T16:16:26.635+01:00  INFO 23760 --- [service-discovery] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-30T16:16:26.635+01:00  INFO 23760 --- [service-discovery] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-01-30T16:16:26.699+01:00  INFO 23760 --- [service-discovery] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-30T16:16:26.699+01:00  INFO 23760 --- [service-discovery] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1506 ms
+2026-01-30T16:16:27.655+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-30T16:16:27.657+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (file:/home/fortune/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar)
+WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+2026-01-30T16:16:27.946+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-30T16:16:27.946+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-30T16:16:29.256+01:00  WARN 23760 --- [service-discovery] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-30T16:16:29.271+01:00  INFO 23760 --- [service-discovery] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-30T16:16:29.287+01:00  INFO 23760 --- [service-discovery] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-30T16:16:29.287+01:00  INFO 23760 --- [service-discovery] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-01-30T16:16:29.289+01:00  INFO 23760 --- [service-discovery] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1769786189288 with initial instances count: 0
+2026-01-30T16:16:29.324+01:00  INFO 23760 --- [service-discovery] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-01-30T16:16:29.325+01:00  INFO 23760 --- [service-discovery] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-01-30T16:16:29.444+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-30T16:16:29.444+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-01-30T16:16:29.444+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-30T16:16:29.444+01:00  INFO 23760 --- [service-discovery] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-30T16:16:29.470+01:00  INFO 23760 --- [service-discovery] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-01-30T16:16:29.478+01:00  INFO 23760 --- [service-discovery] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-01-30T16:16:29.478+01:00  INFO 23760 --- [service-discovery] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-01-30T16:16:29.485+01:00  INFO 23760 --- [service-discovery] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-01-30T16:16:29.529+01:00  INFO 23760 --- [service-discovery] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-DISCOVERY with eureka with status UP
+2026-01-30T16:16:29.538+01:00  INFO 23760 --- [service-discovery] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-01-30T16:16:29.538+01:00  INFO 23760 --- [service-discovery] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-01-30T16:16:29.539+01:00  INFO 23760 --- [service-discovery] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-01-30T16:16:29.539+01:00  INFO 23760 --- [service-discovery] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-01-30T16:16:29.539+01:00  INFO 23760 --- [service-discovery] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-01-30T16:16:29.541+01:00  INFO 23760 --- [service-discovery] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-01-30T16:16:29.547+01:00  INFO 23760 --- [service-discovery] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2026-01-30T16:16:29.548+01:00  INFO 23760 --- [service-discovery] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-01-30T16:16:29.816+01:00  INFO 23760 --- [service-discovery] [           main] c.f.d.ServiceDiscoveryApplication        : Started ServiceDiscoveryApplication in 5.341 seconds (process running for 5.91)
+2026-01-30T16:16:35.311+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-30T16:16:35.311+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-30T16:16:35.312+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-30T16:16:35.366+01:00  WARN 23760 --- [service-discovery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: ADMIN-SERVER - 10.156.63.176:admin-server:9090
+2026-01-30T16:16:35.366+01:00  WARN 23760 --- [service-discovery] [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): ADMIN-SERVER - 10.156.63.176:admin-server:9090
+2026-01-30T16:16:35.506+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVER/10.156.63.176:admin-server:9090 with status DOWN (replication=false)
+2026-01-30T16:16:36.171+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVER/10.156.63.176:admin-server:9090 with status DOWN (replication=true)
+2026-01-30T16:16:38.142+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVER/10.156.63.176:admin-server:9090 with status UP (replication=false)
+2026-01-30T16:16:38.648+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVER/10.156.63.176:admin-server:9090 with status UP (replication=true)
+2026-01-30T16:16:43.878+01:00  INFO 23760 --- [service-discovery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY-SERVICE/10.156.63.176:api-gateway-service:8081 with status UP (replication=false)
+2026-01-30T16:16:44.397+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY-SERVICE/10.156.63.176:api-gateway-service:8081 with status UP (replication=true)
+2026-01-30T16:16:51.553+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/auth-service:4ee3d0601938ee6de9241974733c62e7 with status UP (replication=false)
+2026-01-30T16:16:52.066+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/auth-service:4ee3d0601938ee6de9241974733c62e7 with status UP (replication=true)
+2026-01-30T16:16:55.386+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ADMIN-SERVER/10.156.63.176:admin-server:9090 (replication=false)
+2026-01-30T16:16:55.902+01:00  WARN 23760 --- [service-discovery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: ADMIN-SERVER/10.156.63.176:admin-server:9090
+2026-01-30T16:16:55.902+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): ADMIN-SERVER - 10.156.63.176:admin-server:9090
+2026-01-30T16:16:55.904+01:00  WARN 23760 --- [service-discovery] [get_localhost-2] c.n.eureka.cluster.ReplicationTask       : The replication of task ADMIN-SERVER/10.156.63.176:admin-server:9090:Cancel@localhost failed with response code 404
+2026-01-30T16:16:55.905+01:00  WARN 23760 --- [service-discovery] [get_localhost-2] c.netflix.eureka.cluster.PeerEurekaNode  : ADMIN-SERVER/10.156.63.176:admin-server:9090:Cancel@localhost: missing entry.
+2026-01-30T16:16:57.054+01:00  INFO 23760 --- [service-discovery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/customer-service:a1fca19aa0ad5b6dd9b170ac35778f44 with status UP (replication=false)
+2026-01-30T16:16:57.566+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/customer-service:a1fca19aa0ad5b6dd9b170ac35778f44 with status UP (replication=true)
+2026-01-30T16:17:05.849+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/product-service:7f9ab8b2431563f1894e70b585ebbf9e with status UP (replication=false)
+2026-01-30T16:17:06.370+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/product-service:7f9ab8b2431563f1894e70b585ebbf9e with status UP (replication=true)
+2026-01-30T16:17:08.148+01:00  WARN 23760 --- [service-discovery] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: ADMIN-SERVER - 10.156.63.176:admin-server:9090
+2026-01-30T16:17:08.148+01:00  WARN 23760 --- [service-discovery] [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Renew): ADMIN-SERVER - 10.156.63.176:admin-server:9090
+2026-01-30T16:17:08.164+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVER/10.156.63.176:admin-server:9090 with status UP (replication=false)
+2026-01-30T16:17:08.688+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVER/10.156.63.176:admin-server:9090 with status UP (replication=true)
+2026-01-30T16:17:12.133+01:00  INFO 23760 --- [service-discovery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:fc24db2bdb5f770027f070ce4197ceba with status UP (replication=false)
+2026-01-30T16:17:12.647+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:fc24db2bdb5f770027f070ce4197ceba with status UP (replication=true)
+2026-01-30T16:17:16.253+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CART-SERVICE/cart-service:ae8790e5abf68402e7b5a5d085c1bb76 with status UP (replication=false)
+2026-01-30T16:17:16.759+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CART-SERVICE/cart-service:ae8790e5abf68402e7b5a5d085c1bb76 with status UP (replication=true)
+2026-01-30T16:17:23.905+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/payment-service:f4dd8fa0038eb5c3f7e431175a211125 with status UP (replication=false)
+2026-01-30T16:17:24.417+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/payment-service:f4dd8fa0038eb5c3f7e431175a211125 with status UP (replication=true)
+2026-01-30T16:17:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:18:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:19:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:20:29.541+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:21:29.541+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:21:31.905+01:00  INFO 23760 --- [service-discovery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/order-service:2e00333c7181b26e8f126da4774f5bc9 with status UP (replication=false)
+2026-01-30T16:21:32.416+01:00  INFO 23760 --- [service-discovery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/order-service:2e00333c7181b26e8f126da4774f5bc9 with status UP (replication=true)
+2026-01-30T16:22:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:23:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:24:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:25:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:26:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:27:29.540+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:28:29.541+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:29:29.542+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:30:29.541+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:31:29.478+01:00  INFO 23760 --- [service-discovery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 17
+2026-01-30T16:31:29.541+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:32:29.541+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:33:29.542+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:34:29.543+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:35:29.542+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:36:29.542+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:37:29.542+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:38:29.542+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:39:29.542+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:40:29.543+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:41:29.543+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:42:29.543+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:43:29.543+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:44:29.544+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:45:29.545+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:46:29.478+01:00  INFO 23760 --- [service-discovery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 17
+2026-01-30T16:46:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:47:29.545+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:48:29.545+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:49:29.545+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:50:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:51:29.547+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:52:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:53:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:54:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:55:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:56:29.547+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:57:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:58:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T16:59:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:00:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:01:29.478+01:00  INFO 23760 --- [service-discovery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 17
+2026-01-30T17:01:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:02:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:03:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:04:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:05:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:06:29.546+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:07:29.547+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:08:29.547+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:09:29.547+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:10:29.548+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:11:29.549+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:12:29.549+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:13:29.549+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:14:29.549+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:15:29.549+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:16:29.478+01:00  INFO 23760 --- [service-discovery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 17
+2026-01-30T17:16:29.550+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:17:29.550+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:18:29.551+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:19:29.551+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:20:29.551+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:21:29.551+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:22:29.551+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:23:29.551+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:24:29.552+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:25:29.552+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:26:29.552+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:27:29.552+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:28:29.553+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:29:29.554+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:30:29.553+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:31:29.478+01:00  INFO 23760 --- [service-discovery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 17
+2026-01-30T17:31:29.553+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:32:29.553+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:33:29.553+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:34:29.553+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:35:29.554+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:36:29.555+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:37:29.554+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:38:29.554+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:39:29.555+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:40:29.556+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:41:29.556+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:42:29.556+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:43:29.557+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-30T17:44:29.557+01:00  INFO 23760 --- [service-discovery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms

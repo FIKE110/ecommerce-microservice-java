@@ -10,4 +10,6 @@ import java.util.Optional;
 public interface PaymentResponseRepository extends JpaRepository<PaymentResponse,Long> {
 
     Page<PaymentResponse> findByInvoiceStatus(String status, Pageable pageable);
+
+    Optional<PaymentResponse> findByReference(String reference);
 }

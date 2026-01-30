@@ -1,6 +1,7 @@
 package com.fortune.order.service;
 
 import com.fortune.order.config.AuthClient;
+import com.fortune.order.config.PaymentClient;
 import com.fortune.order.enumeration.OrderStatus;
 import com.fortune.order.model.Order;
 import com.fortune.order.model.ProductItem;
@@ -24,15 +25,26 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final AuthClient authClient;
+    private final PaymentClient paymentClient;
 
-    public OrderService(OrderRepository orderRepository, AuthClient authClient) {
+    public OrderService(OrderRepository orderRepository, AuthClient authClient, PaymentClient paymentClient) {
         this.orderRepository = orderRepository;
         this.authClient = authClient;
+        this.paymentClient = paymentClient;
+    }
+
+    public Order getOrderById(UUID id) {
+        return orderRepository.findById(id).orElseThrow(() -> new RuntimeException("<UNK>"));
     }
 
     public void updateOrderReference(Order order,String reference) {
         order.setTxnReference(reference);
         order.setStatus(OrderStatus.PENDING);
+        orderRepository.save(order);
+    }
+
+    public void updatePaymentLink(Order order, String paymentLink) {
+        order.setPaymentLink(paymentLink);
         orderRepository.save(order);
     }
 
@@ -74,9 +86,10 @@ public class OrderService {
     }
 
     public Page<Order> getOrdersByUsername(String username, int page, int size, String sort) {
-        Pageable pageable = PageRequest.of(page, size, Sort.by(sort));
+        Pageable pageable = PageRequest.of(page, size, Sort.by(sort).descending());
         return orderRepository.findByUsername(username,pageable);
     }
+
 
     public void updateOrder(UUID orderId,Order orderDto) {
         Order order=orderRepository.findById(orderId).orElseThrow(()->new RuntimeException("Order not found"));

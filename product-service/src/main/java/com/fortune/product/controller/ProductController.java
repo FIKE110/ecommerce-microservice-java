@@ -5,6 +5,7 @@ import com.fortune.ApiResponse;
 import com.fortune.DataWrapper;
 import com.fortune.MessageInString;
 import com.fortune.product.dto.ProductDto;
+import com.fortune.product.dto.ProductResponseDto;
 import com.fortune.product.entity.Product;
 import com.fortune.product.enumeration.ProductResponseCode;
 import com.fortune.product.request.ProductRequest;
@@ -44,12 +45,23 @@ public class ProductController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<ApiDataResponse<DataWrapper<ProductResponseCode, Product>>> getProductById(@PathVariable("id") UUID id) {
+    public ResponseEntity<ApiDataResponse<DataWrapper<ProductResponseCode, ProductResponseDto>>> getProductById(@PathVariable("id") UUID id) {
         return ResponseEntity.ok(
               ApiResponse.data(
                                 ProductResponseCode.PRODUCT_FETCHED,
                                 productService.getProductById(id)
                         )
+
+        );
+    }
+
+    @GetMapping("/{id}/name")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<Map<String,String>> getProductNameById(@PathVariable("id") UUID id) {
+        return ResponseEntity.ok(
+                Map.of(
+                    "name",    productService.getProductById(id).getName()
+                )
 
         );
     }
@@ -65,16 +77,31 @@ public class ProductController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<ApiDataResponse<DataWrapper<ProductResponseCode, Page<Product>>>> getProducts(
-            @RequestParam(value = "sort",defaultValue = "createdAt") String sort,@RequestParam(value = "page",defaultValue = "0") Integer page,
-            @RequestParam(value = "size",defaultValue = "1") Integer size
+            @RequestParam(value = "name", required = false) String name,
+            @RequestParam(value = "category", required = false) String category,
+            @RequestParam(value = "minPrice", required = false) Double minPrice,
+            @RequestParam(value = "maxPrice", required = false) Double maxPrice,
+            @RequestParam(value = "sort", defaultValue = "createdAt") String sort,
+            @RequestParam(value = "page", defaultValue = "0") Integer page,
+            @RequestParam(value = "size", defaultValue = "10") Integer size
     ) {
+
         return ResponseEntity.ok(
                 ApiResponse.data(
                         ProductResponseCode.PRODUCTS_FETCHED,
-                        productService.getProducts(page, size, sort)
+                        productService.getProducts(
+                                page,
+                                size,
+                                sort,
+                                name,
+                                category,
+                                minPrice,
+                                maxPrice
+                        )
                 )
-                );
+        );
     }
+
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
