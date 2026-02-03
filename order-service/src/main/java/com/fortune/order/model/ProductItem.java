@@ -6,10 +6,10 @@ import lombok.*;
 import java.util.UUID;
 
 
-//@Entity
+
 @Setter
 @Getter
-@Builder
+@Builder(toBuilder = true)
 @Embeddable
 @NoArgsConstructor
 @AllArgsConstructor

@@ -28,6 +28,14 @@ public class RabbitMQService {
             Long quantity = Long.parseLong(message.get("quantity"));
             inventoryService.intializeStock(productId,quantity);
         }
+        else if (event.getEventType().equals(EventType.ORDER_PAID)) {
+            Map<String, String> message = (Map<String, String>) event.getMessage();
+            for (Map.Entry<String, String> entry : message.entrySet()) {
+                String productId = entry.getKey();
+                Long quantity = Long.valueOf(entry.getValue());
+                inventoryService.removeFromStock(UUID.fromString(productId), quantity);
+            }
+        }
     }
 
     @RabbitListener(queues = RabbitMQConfig.QUEUE_NAME)

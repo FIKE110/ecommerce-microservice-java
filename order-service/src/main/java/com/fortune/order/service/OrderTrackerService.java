@@ -37,64 +37,50 @@ public class OrderTrackerService {
 
     private void shipPaidOrders(LocalDateTime now) {
 
-        Page<Order> orderPage;
+        Page<Order> orderPage = orderRepository.findByStatus(
+                OrderStatus.PAID,
+                PageRequest.of(0, PAGE_SIZE)
+        );
 
-        do {
-            orderPage = orderRepository.findByStatus(
-                    OrderStatus.PAID,
-                    PageRequest.of(0, PAGE_SIZE)
-            );
+        if (orderPage.isEmpty()) return;
 
-            if (orderPage.isEmpty()) {
-                break;
-            }
+        List<Order> toShip = orderPage.getContent().stream()
+                .filter(order ->
+                        order.getShippingTime() != null &&
+                                !order.getShippingTime().isAfter(now)
+                )
+                .peek(order -> order.setStatus(OrderStatus.SHIPPED))
+                .toList();
 
-            List<Order> toShip = new ArrayList<>();
-
-            for (Order order : orderPage.getContent()) {
-                if (order.getShippingTime() != null &&
-                        !order.getShippingTime().isAfter(now)) {
-
-                    order.setStatus(OrderStatus.SHIPPED);
-                    toShip.add(order);
-                }
-            }
-
-            if (!toShip.isEmpty()) {
-                orderRepository.saveAll(toShip);
-            }
-
-        } while (!orderPage.isEmpty());
+        if (!toShip.isEmpty()) {
+            orderRepository.saveAll(toShip);
+        }
     }
+
+
 
 
     private void deliverShippedOrders(LocalDateTime now) {
 
-        while (true) {
-            Page<Order> orderPage = orderRepository.findByStatus(
-                    OrderStatus.SHIPPED,
-                    PageRequest.of(0, PAGE_SIZE)
-            );
+        Page<Order> orderPage = orderRepository.findByStatus(
+                OrderStatus.SHIPPED,
+                PageRequest.of(0, PAGE_SIZE)
+        );
 
-            if (orderPage.isEmpty()) {
-                break;
-            }
+        if (orderPage.isEmpty()) {
+            return;
+        }
 
-            List<Order> toDeliver = orderPage.getContent().stream()
-                    .filter(order ->
-                            order.getDeliveryTime() != null &&
-                                    !order.getDeliveryTime().isAfter(now)
-                    )
-                    .peek(order -> order.setStatus(OrderStatus.DELIVERED))
-                    .toList();
+        List<Order> toDeliver = orderPage.getContent().stream()
+                .filter(order ->
+                        order.getDeliveryTime() != null &&
+                                !order.getDeliveryTime().isAfter(now)
+                )
+                .peek(order -> order.setStatus(OrderStatus.DELIVERED))
+                .toList();
 
-            if (toDeliver.isEmpty()) {
-                // Nothing eligible → avoid infinite loop
-                break;
-            }
-
+        if (!toDeliver.isEmpty()) {
             orderRepository.saveAll(toDeliver);
-
         }
     }
 

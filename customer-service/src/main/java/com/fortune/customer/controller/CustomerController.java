@@ -38,13 +38,10 @@ public class CustomerController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<ApiDataResponse<DataWrapper<CustomerResponseCode,CustomerProfileDto>>> getCustomerProfile(@AuthenticationPrincipal Jwt jwt) {
+    public ResponseEntity<CustomerProfileDto> getCustomerProfile(@AuthenticationPrincipal Jwt jwt) {
         CustomerProfileDto profile=customerProfileService.getCustomerProfile(jwt.getSubject());
         return ResponseEntity.ok(
-              ApiResponse.data(
-                                CustomerResponseCode.PROFILE_FETCHED,
                                 profile
-                        )
         );
     }
 

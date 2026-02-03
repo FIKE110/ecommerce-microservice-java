@@ -3,6 +3,7 @@ package com.fortune.order.controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fortune.order.config.PaymentClient;
+import com.fortune.order.enumeration.OrderStatus;
 import com.fortune.order.model.Order;
 import com.fortune.order.model.PaymentResponseCheckout;
 import com.fortune.order.service.OrderService;
@@ -64,12 +65,14 @@ public class OrderController {
 
     @PostMapping
     public ResponseEntity<Map<String,String>> createOrder(@RequestHeader("Authorization") String token,@RequestParam("username") String username,@RequestBody Map<String,Map<String,Double>> orders) throws JsonProcessingException {
-        var list=orderService.convertToProductItems(orders);
+        var list=orderService.convertToProductItems(orders,token);
         Order order=orderService.placeOrder(username,list);
-        PaymentResponseCheckout checkoutUrl=objectMapper.readValue(paymentClient.initiatePayment(token,orderService.convertToMapParams(order)), PaymentResponseCheckout.class);
+        orderService.updateOrderStatus(order,OrderStatus.PENDING);
+        PaymentResponseCheckout checkoutUrl=objectMapper.readValue(paymentClient.initiatePayment(token,orderService.convertToMapParams(order,token)), PaymentResponseCheckout.class);
         String link=checkoutUrl.getInvoiceLink();
         orderService.updateOrderReference(order,checkoutUrl.getReference());
         orderService.updatePaymentLink(order,link);
+        orderService.updateOrderStatusByReference(checkoutUrl.getReference(), OrderStatus.PLACED);
         return ResponseEntity.ok(Map.of(
                 "checkout_url",link
         ));
@@ -77,12 +80,14 @@ public class OrderController {
 
 
     @PostMapping("/reorder/{id}")
-    public ResponseEntity<Map<String,String>> redorder(@RequestHeader("Authorization") String token,@RequestParam("username") String username,@PathVariable("id") UUID id) throws JsonProcessingException {
+    public ResponseEntity<Map<String,String>> redorder(@RequestHeader("Authorization") String token,@PathVariable("id") UUID id) throws JsonProcessingException {
         Order order=orderService.getOrderById(id);
-        PaymentResponseCheckout checkoutUrl=objectMapper.readValue(paymentClient.initiatePayment(token,orderService.convertToMapParams(order)), PaymentResponseCheckout.class);
+        orderService.updateOrderStatus(order,OrderStatus.PENDING);
+        PaymentResponseCheckout checkoutUrl=objectMapper.readValue(paymentClient.initiatePayment(token,orderService.convertToMapParams(order,token)), PaymentResponseCheckout.class);
         String link=checkoutUrl.getInvoiceLink();
         orderService.updateOrderReference(order,checkoutUrl.getReference());
         orderService.updatePaymentLink(order,link);
+        orderService.updateOrderStatusByReference(checkoutUrl.getReference(), OrderStatus.PLACED);
         return ResponseEntity.ok(Map.of(
                 "checkout_url",link
         ));

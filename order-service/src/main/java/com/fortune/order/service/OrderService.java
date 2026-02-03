@@ -1,7 +1,11 @@
 package com.fortune.order.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fortune.order.config.AuthClient;
+import com.fortune.order.config.CustomerClient;
 import com.fortune.order.config.PaymentClient;
+import com.fortune.order.config.ProductClient;
 import com.fortune.order.enumeration.OrderStatus;
 import com.fortune.order.model.Order;
 import com.fortune.order.model.ProductItem;
@@ -15,10 +19,7 @@ import org.springframework.stereotype.Service;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class OrderService {
@@ -26,15 +27,26 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final AuthClient authClient;
     private final PaymentClient paymentClient;
+    private final CustomerClient customerClient;
+    private final ProductClient productClient;
+    private final ObjectMapper objectMapper;
 
-    public OrderService(OrderRepository orderRepository, AuthClient authClient, PaymentClient paymentClient) {
+    public OrderService(OrderRepository orderRepository, AuthClient authClient, PaymentClient paymentClient, CustomerClient customerClient, ProductClient productClient, ObjectMapper objectMapper) {
         this.orderRepository = orderRepository;
         this.authClient = authClient;
         this.paymentClient = paymentClient;
+        this.objectMapper=objectMapper;
+        this.customerClient = customerClient;
+        this.productClient = productClient;
     }
 
     public Order getOrderById(UUID id) {
         return orderRepository.findById(id).orElseThrow(() -> new RuntimeException("<UNK>"));
+    }
+
+    public void updateOrderStatus(Order order, OrderStatus status) {
+        order.setStatus(status);
+        orderRepository.save(order);
     }
 
     public void updateOrderReference(Order order,String reference) {
@@ -48,15 +60,18 @@ public class OrderService {
         orderRepository.save(order);
     }
 
+    public Optional<Order> findByReference(String reference) {
+        return orderRepository.findByTxnReference(reference);
+    }
+
     public Order placeOrder(String username, List<ProductItem> products) {
         LocalDateTime now = LocalDateTime.now();
         Order order = Order.builder()
                 .username(username)
                 .orderTime(now)
-                .status(OrderStatus.PLACED)
-//                .products(products)
-                .txnReference("ord_"+UUID.randomUUID().toString())
-//                .totalPrice(BigDecimal.valueOf(20000))
+                .status(OrderStatus.PENDING)
+                .products(products)
+                .txnReference(null)
                 .totalPrice(BigDecimal.valueOf(products.stream().mapToDouble(ProductItem::getPrice).sum()))
                 .build();
        return orderRepository.save(order);
@@ -68,6 +83,13 @@ public class OrderService {
                                 orderRepository.save(order);}
        );
 
+    }
+
+    public void updateOrderShipingAndDelivery(Order order) {
+        Random random=new Random();
+        order.setDeliveryTime(LocalDateTime.now().plusMinutes(10+random.nextInt(5)));
+        order.setShippingTime(LocalDateTime.now().plusMinutes(random.nextInt(5)));
+        orderRepository.save(order);
     }
 
     public void cancelOrder(UUID orderId) {
@@ -96,14 +118,14 @@ public class OrderService {
         order.setStatus(orderDto.getStatus());
         order.setOrderTime(orderDto.getOrderTime());
         order.setDeliveryTime(orderDto.getDeliveryTime());
-//        order.setProducts(orderDto.getProducts());
         orderRepository.save(order);
     }
 
 
-    public List<ProductItem> convertToProductItems(Map<String, Map<String, Double>> order) {
+    public List<ProductItem> convertToProductItems(Map<String, Map<String, Double>> order,String token) {
         List<ProductItem> productItems=new ArrayList<>();
         for(Map.Entry<String, Map<String, Double>> entry: order.entrySet()) {
+            productClient.getProductName(token, entry.getKey()).getBody().get("name");
             productItems.add(ProductItem.builder()
                             .productId(UUID.fromString(entry.getKey()))
                             .quantity(entry.getValue().get("quantity").longValue())
@@ -114,19 +136,22 @@ public class OrderService {
         return productItems;
     }
 
-    public Map<String, String> convertToMapParams(Order order) {
+    public Map<String, String> convertToMapParams(Order order,String token) throws JsonProcessingException {
         var username=order.getUsername();
         var response=authClient.profile(username).getBody();
-//        var profileResponse=cust
+        var res=customerClient.getCustomerProfile(token);
+        double total = order.getProducts().stream()
+                .mapToDouble(item -> item.getPrice() * item.getQuantity())
+                .sum();
+
+
         return Map.of(
-                "amount","2000",
-                "first_name","Fortune",
-                "lastname","Fortune",
-                "address","address",
-                "item_name","Fanta",
-                "quantity","1",
-                "item_amount","2000",
-                "email",response.get("email")
+                "amount",Double.toString(total),
+                "firstName",res.getBody().get("firstName"),
+                "lastName",res.getBody().get("lastName"),
+                "address",res.getBody().get("address"),
+                "email",response.get("email"),
+                "items",objectMapper.writeValueAsString(order.getProducts())
         );
     }
 }

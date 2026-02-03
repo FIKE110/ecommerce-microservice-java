@@ -44,6 +44,7 @@ public class PaymentTrackerService {
                     PaymentResponse invoiceresponse=objectMapper.readValue(response,PaymentResponse.class);
                     if(!invoiceresponse.getInvoiceStatus().equals("PENDING")){
                         p.setInvoiceStatus(invoiceresponse.getInvoiceStatus());
+                        p.setInvoiceLink("https://project-x-merchant.k8.isw.la/paymentgateway/invoice/confirmation/"+p.getReference());
                         paymentResponseRepository.save(p);
                         rabbitMQService.sendMessage(Event.builder()
                                         .eventType(p.getInvoiceStatus().equalsIgnoreCase("PAID") ?

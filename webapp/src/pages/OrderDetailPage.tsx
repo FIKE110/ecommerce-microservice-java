@@ -17,6 +17,7 @@ const OrderActions = ({ order }: { order: Order }) => {
     try {
       await api.post(`/order/reorder/${order.id}`);
       toast.success('Order has been reordered successfully!');
+      setTimeout(()=>window.location.reload(),500)
     } catch (err) {
       console.error("Error reordering:", err);
       toast.error('Failed to reorder.');

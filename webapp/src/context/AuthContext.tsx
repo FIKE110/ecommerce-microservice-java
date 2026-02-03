@@ -27,7 +27,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (token) {
         try {
           const response = await api.get('/customer');
-          setProfile(response.data.data.data); // Assuming nested data structure
+          setProfile(response.data); // Assuming nested data structure
           setProfileFetched(true);
         } catch (err: any) {
           console.error("Error fetching profile", err);

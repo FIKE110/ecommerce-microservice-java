@@ -22,7 +22,7 @@ const ProfilePage = () => {
     const fetchProfile = async () => {
       try {
         const response = await api.get('/customer');
-        setProfile(response.data.data.data); // Assuming nested data structure
+        setProfile(response.data); // Assuming nested data structure
       } catch (err: any) {
         console.error("Error fetching profile", err);
         if (err.response?.status === 404) {

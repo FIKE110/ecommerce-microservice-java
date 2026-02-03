@@ -1,7 +1,18 @@
 import {useState, useEffect, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import type { Order } from '../types';
-import { Loader, AlertCircle, ShoppingBag, ExternalLink, Package, Truck, CheckCircle, Clock, Calendar } from 'lucide-react';
+import {
+  Loader,
+  AlertCircle,
+  ShoppingBag,
+  ExternalLink,
+  Package,
+  Truck,
+  CheckCircle,
+  Clock,
+  Calendar,
+  X
+} from 'lucide-react';
 import api from '../services/api';
 import Pagination from '../components/Pagination';
 import {AuthContext} from "../context/AuthContext.tsx";
@@ -45,10 +56,12 @@ const OrderPage = () => {
         return <CheckCircle className="h-5 w-5" />;
       case 'shipped':
         return <Truck className="h-5 w-5" />;
-      case 'processing':
+      case 'pending':
         return <Clock className="h-5 w-5" />;
+      case 'failed':
+        return <X className="h-5 w-5" />;
       default:
-        return <Package className="h-5 w-5" />;
+        return <Package className="h-5 w-5 " />;
     }
   };
 
@@ -59,8 +72,10 @@ const OrderPage = () => {
         return 'bg-green-100 text-green-800';
       case 'shipped':
         return 'bg-blue-100 text-blue-800';
-      case 'processing':
+      case 'pending':
         return 'bg-yellow-100 text-yellow-800';
+      case 'failed':
+        return 'bg-red-100 text-red-800'
       default:
         return 'bg-gray-100 text-gray-800';
     }

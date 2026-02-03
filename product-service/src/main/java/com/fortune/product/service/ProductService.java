@@ -49,7 +49,7 @@ public class ProductService {
                 .rating(5.0)
                 .description(request.getDescription())
                 .images(request.getImages())
-                .discount(0.0)
+                .discount(request.getDiscount())
                 .build();
         product=productRepository.save(product);
         rabbitMQService.sendMessage(

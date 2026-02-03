@@ -2,6 +2,7 @@ package com.fortune.payment.service;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fortune.payment.config.PaymentResponse;
 import com.fortune.payment.config.PaymentResponseStatus;
@@ -59,23 +60,55 @@ public class InterswitchService implements PaymentService {
         String access_key="Bearer " +fetchAuthKey();
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("amount", Double.parseDouble(params.get("amount")));
-        requestBody.put("customerName", params.get("first_name") + " " + params.get("last_name"));
+        requestBody.put("customerName", params.get("firstName") + " " + params.get("lastName"));
         requestBody.put("customerEmail", params.get("email"));
         requestBody.put("merchantCode", merchantCode);
         requestBody.put("payableCode", "Default_Payable_" + merchantCode);
         requestBody.put("address", params.get("address"));
         requestBody.put("currency", currencyCode);
+        requestBody.put("description", "");                // default empty
+        requestBody.put("dueDate", System.currentTimeMillis());  // current timestamp
+        requestBody.put("tax", "");                        // default empty
+        requestBody.put("note", "");                       // default empty
+        requestBody.put("discountType", "percentage");    // default value
+        requestBody.put("discount", "");                   // default empty
+        requestBody.put("discountPercent", null);         // default null
+
+        String itemsJson = params.get("items");
+
+        List<Map<String, Object>> items =
+                objectMapper.readValue(itemsJson, new TypeReference<>() {});
+
+        List<Map<String, Object>> lineItems = items.stream()
+                .map(item -> {
+
+                    double price = Double.parseDouble(item.get("price").toString());
+                    int quantity = Integer.parseInt(item.get("quantity").toString());
 
 
-        List<Map<String, Object>> lineItems = List.of(
-                Map.of(
-                        "itemName", params.get("item_name"),
-                        "quantity", Integer.parseInt(params.get("quantity")),
-                        "itemAmount", Integer.parseInt(params.get("item_amount"))
+                    return Map.of(
+                            "itemName",
+                            item.get("productName") != null
+                                    ? item.get("productName").toString()
+                                    : "Product-" + item.get("productId"),
+
+                            "quantity", item.get("price"),
+
+                            "itemAmount", item.get("quantity")
+                    );
+                })
+                .toList();
+
+        double totalAmount = items.stream()
+                .mapToDouble(item ->
+                        Double.parseDouble(item.get("price").toString()) *
+                                Integer.parseInt(item.get("quantity").toString())
                 )
-        );
-        requestBody.put("lineItems", lineItems);
+                .sum();
 
+        requestBody.put("amount", totalAmount);
+        requestBody.put("lineItems", lineItems);
+        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(requestBody));
         PaymentResponse response=restClient.post()
                 .uri("/paymentgateway/api/v1/merchant/invoice/create")
                 .contentType(MediaType.APPLICATION_JSON)
