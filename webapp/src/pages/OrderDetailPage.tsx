@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import type { Order, OrderItem } from '../types';
 import {
   Loader, AlertCircle, ArrowLeft, Package, Calendar,
-  Clock, CheckCircle, Truck, CreditCard, User
+  Clock, CheckCircle, Truck, CreditCard, User, X
 } from 'lucide-react';
 import api from '../services/api';
 import { motion } from 'framer-motion';
@@ -133,15 +133,37 @@ const OrderDetailPage = () => {
   }, [id]);
 
   const getStatusColor = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'completed':
-        return 'bg-green-500/20 text-green-400 border-green-500/30';
-      case 'shipped':
-        return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
-      case 'processing':
+    switch (status.toUpperCase()) {
+      case 'PENDING':
         return 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30';
+      case 'PAID':
+        return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
+      case 'SHIPPED':
+        return 'bg-purple-500/20 text-purple-400 border-purple-500/30';
+      case 'DELIVERED':
+        return 'bg-green-500/20 text-green-400 border-green-500/30';
+      case 'FAILED':
+        return 'bg-red-500/20 text-red-400 border-red-500/30';
       default:
         return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
+    }
+  };
+
+  const getStatusIcon = (status: string) => {
+    switch (status.toLowerCase()) {
+      case 'delivered':
+      case 'completed':
+        return <CheckCircle className="w-4 h-4" />;
+      case 'shipped':
+        return <Truck className="w-4 h-4" />;
+      case 'paid':
+        return <CreditCard className="w-4 h-4" />;
+      case 'pending':
+        return <Clock className="w-4 h-4" />;
+      case 'failed':
+        return <X className="w-4 h-4" />;
+      default:
+        return <Package className="w-4 h-4" />;
     }
   };
 
@@ -254,9 +276,7 @@ const OrderDetailPage = () => {
                     </p>
                   </div>
                   <div className={`px-4 py-2 rounded-full border ${getStatusColor(order.status)} flex items-center gap-2 font-medium`}>
-                    {order.status.toLowerCase() === 'completed' ? <CheckCircle className="w-4 h-4" /> :
-                      order.status.toLowerCase() === 'shipped' ? <Truck className="w-4 h-4" /> :
-                        <Clock className="w-4 h-4" />}
+                    {getStatusIcon(order.status)}
                     {order.status}
                   </div>
                 </div>

@@ -3,14 +3,6 @@ WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common
 WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [[1;34mINFO[m] Scanning for projects...
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.fortune:order-service:jar:1.0-SNAPSHOT
-[[1;33mWARNING[m] 'dependencies.dependency.scope' for org.springframework.boot:spring-boot-configuration-processor:jar must be one of [provided, compile, runtime, test, system] but is 'annotationProcessor'. @ line 74, column 20
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
-[[1;33mWARNING[m] 
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m---------------------< [0;36mcom.fortune:order-service[0;1m >----------------------[m
 [[1;34mINFO[m] [1mBuilding order-service 1.0-SNAPSHOT[m
@@ -35,171 +27,195 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [[1;34mINFO[m] -------------------------------------------------------------
 [[1;31mERROR[m] COMPILATION ERROR : 
 [[1;34mINFO[m] -------------------------------------------------------------
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java:[36,21] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java:[37,21] cannot find symbol
   symbol:   method getProducts()
   location: variable order of type com.fortune.order.model.Order
 [[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[48,14] cannot find symbol
-  symbol:   method setTxnReference(java.lang.String)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[49,14] cannot find symbol
   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
   location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[53,14] cannot find symbol
+  symbol:   method setTxnReference(java.lang.String)
+  location: variable order of type com.fortune.order.model.Order
 [[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[54,14] cannot find symbol
+  symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
+  location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[59,14] cannot find symbol
   symbol:   method setPaymentLink(java.lang.String)
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[64,28] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[69,28] cannot find symbol
   symbol:   method builder()
   location: class com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[70,78] invalid method reference
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[75,78] invalid method reference
   cannot find symbol
     symbol:   method getPrice(T)
     location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[77,29] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[82,29] cannot find symbol
   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[85,14] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[90,14] cannot find symbol
+  symbol:   method setDeliveryTime(java.time.LocalDateTime)
+  location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[91,14] cannot find symbol
+  symbol:   method setShippingTime(java.time.LocalDateTime)
+  location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[97,14] cannot find symbol
   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[106,33] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[118,33] cannot find symbol
   symbol:   method getStatus()
   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[107,36] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[119,36] cannot find symbol
   symbol:   method getOrderTime()
   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[108,39] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[120,39] cannot find symbol
   symbol:   method getDeliveryTime()
   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[117,41] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[128,41] cannot find symbol
   symbol:   method builder()
   location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[128,27] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[140,27] cannot find symbol
   symbol:   method getUsername()
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[131,29] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[143,29] cannot find symbol
   symbol:   method getProducts()
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[142,62] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[154,62] cannot find symbol
   symbol:   method getProducts()
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[55,26] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[49,30] cannot find symbol
   symbol:   method getShippingTime()
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[56,31] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[50,39] cannot find symbol
   symbol:   method getShippingTime()
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[58,26] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[52,37] cannot find symbol
   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[85,34] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[76,30] cannot find symbol
   symbol:   method getDeliveryTime()
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[86,43] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[77,39] cannot find symbol
   symbol:   method getDeliveryTime()
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[88,41] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[79,37] cannot find symbol
   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[71,32] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[72,32] cannot find symbol
   symbol:   method getInvoiceLink()
   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[72,60] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[73,60] cannot find symbol
   symbol:   method getReference()
   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[74,62] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[75,62] cannot find symbol
   symbol:   method getReference()
   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[85,32] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[87,32] cannot find symbol
   symbol:   method getInvoiceLink()
   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[86,60] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[88,60] cannot find symbol
   symbol:   method getReference()
   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;34mINFO[m] 26 errors 
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[90,62] cannot find symbol
+  symbol:   method getReference()
+  location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
+[[1;34mINFO[m] 30 errors 
 [[1;34mINFO[m] -------------------------------------------------------------
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  3.545 s
-[[1;34mINFO[m] Finished at: 2026-02-03T11:14:02+01:00
+[[1;34mINFO[m] Total time:  6.346 s
+[[1;34mINFO[m] Finished at: 2026-02-21T13:15:20+01:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.1:compile[m [1m(default-compile)[m on project [36morder-service[m: [1;31mCompilation failure[m: Compilation failure: 
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java:[36,21] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java:[37,21] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getProducts()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
 [[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[48,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setTxnReference(java.lang.String)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[49,14] cannot find symbol
 [[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[53,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setTxnReference(java.lang.String)
+[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
 [[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[54,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
+[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[59,14] cannot find symbol
 [[1;31mERROR[m]   symbol:   method setPaymentLink(java.lang.String)
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[64,28] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[69,28] cannot find symbol
 [[1;31mERROR[m]   symbol:   method builder()
 [[1;31mERROR[m]   location: class com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[70,78] invalid method reference
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[75,78] invalid method reference
 [[1;31mERROR[m]   cannot find symbol
 [[1;31mERROR[m]     symbol:   method getPrice(T)
 [[1;31mERROR[m]     location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[77,29] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[82,29] cannot find symbol
 [[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[85,14] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[90,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setDeliveryTime(java.time.LocalDateTime)
+[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[91,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setShippingTime(java.time.LocalDateTime)
+[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[97,14] cannot find symbol
 [[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[106,33] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[118,33] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getStatus()
 [[1;31mERROR[m]   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[107,36] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[119,36] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getOrderTime()
 [[1;31mERROR[m]   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[108,39] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[120,39] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getDeliveryTime()
 [[1;31mERROR[m]   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[117,41] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[128,41] cannot find symbol
 [[1;31mERROR[m]   symbol:   method builder()
 [[1;31mERROR[m]   location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[128,27] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[140,27] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getUsername()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[131,29] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[143,29] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getProducts()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[142,62] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[154,62] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getProducts()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[55,26] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[49,30] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getShippingTime()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[56,31] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[50,39] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getShippingTime()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[58,26] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[52,37] cannot find symbol
 [[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[85,34] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[76,30] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getDeliveryTime()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[86,43] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[77,39] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getDeliveryTime()
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[88,41] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[79,37] cannot find symbol
 [[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
 [[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[71,32] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[72,32] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getInvoiceLink()
 [[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[72,60] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[73,60] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getReference()
 [[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[74,62] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[75,62] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getReference()
 [[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[85,32] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[87,32] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getInvoiceLink()
 [[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[86,60] cannot find symbol
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[88,60] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getReference()
+[[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
+[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[90,62] cannot find symbol
 [[1;31mERROR[m]   symbol:   method getReference()
 [[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
 [[1;31mERROR[m] -> [1m[Help 1][m

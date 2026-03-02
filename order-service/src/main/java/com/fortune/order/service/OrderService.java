@@ -125,10 +125,10 @@ public class OrderService {
     public List<ProductItem> convertToProductItems(Map<String, Map<String, Double>> order,String token) {
         List<ProductItem> productItems=new ArrayList<>();
         for(Map.Entry<String, Map<String, Double>> entry: order.entrySet()) {
-            productClient.getProductName(token, entry.getKey()).getBody().get("name");
             productItems.add(ProductItem.builder()
                             .productId(UUID.fromString(entry.getKey()))
                             .quantity(entry.getValue().get("quantity").longValue())
+                            .productName(productClient.getProductName(token, entry.getKey()).getBody().get("name"))
                             .price(entry.getValue().get("price"))
                     .build()
             );

@@ -18,6 +18,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.URI;
 import java.util.Map;
 import java.util.UUID;
 
@@ -54,6 +55,22 @@ public class ProductController {
 
         );
     }
+
+    @GetMapping("/{id}/image")
+    public ResponseEntity<Void> getProductImageById(@PathVariable UUID id) {
+
+        var product = productService.getProductById(id);
+
+        if (product.getImages() == null || product.getImages().isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+
+        return ResponseEntity
+                .status(HttpStatus.FOUND)   // 302 redirect
+                .location(URI.create(product.getImages().get(0)))
+                .build();
+    }
+
 
     @GetMapping("/{id}/name")
     @ResponseStatus(HttpStatus.OK)
