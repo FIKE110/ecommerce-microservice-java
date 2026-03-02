@@ -26,3 +26,6 @@ jobs:
 
       - name: Build with script
         run: ./scripts/build.sh backend
+
+      - name: build all docker images
+        run: ./scripts/docker.sh build
