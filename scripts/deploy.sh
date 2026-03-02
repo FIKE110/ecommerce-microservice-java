@@ -27,11 +27,27 @@ docker_build_all() {
     echo ""
     echo "[2/3] Building Docker images..."
     
-    SERVICES=("admin-server" "cart-service" "api-docs")
+    SERVICES=(
+        "admin-server"
+        "api-docs"
+        "api-gateway"
+        "auth-service"
+        "cart-service"
+        "config-server"
+        "customer-service"
+        "inventory-service"
+        "notification-service"
+        "order-service"
+        "payment-service"
+        "product-service"
+        "service-discovery"
+    )
     
     for svc in "${SERVICES[@]}"; do
-        echo "Building $svc..."
-        docker build -t "$REGISTRY/ecommerce-$svc:$IMAGE_TAG" ./$svc/
+        if [ -d "./$svc" ] && [ -f "./$svc/Dockerfile" ]; then
+            echo "Building $svc..."
+            docker build -t "$REGISTRY/ecommerce-$svc:$IMAGE_TAG" ./$svc/
+        fi
     done
     
     echo "✓ Docker images built"
@@ -53,9 +69,29 @@ deploy_local() {
     echo "Deploying to local environment..."
     
     ./scripts/build.sh all
-    docker build -t ecommerce/admin-server:latest ./admin-server/
-    docker build -t ecommerce/cart-service:latest ./cart-service/
-    docker build -t ecommerce/api-docs:latest ./api-docs/
+    
+    SERVICES=(
+        "admin-server"
+        "api-docs"
+        "api-gateway"
+        "auth-service"
+        "cart-service"
+        "config-server"
+        "customer-service"
+        "inventory-service"
+        "notification-service"
+        "order-service"
+        "payment-service"
+        "product-service"
+        "service-discovery"
+    )
+    
+    for svc in "${SERVICES[@]}"; do
+        if [ -d "./$svc" ] && [ -f "./$svc/Dockerfile" ]; then
+            echo "Building $svc..."
+            docker build -t "ecommerce/$svc:latest" ./$svc/
+        fi
+    done
     
     docker-compose up -d
     

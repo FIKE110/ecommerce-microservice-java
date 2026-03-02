@@ -1,5 +1,5 @@
 # Use a lightweight JDK to run the application
-FROM docker.io/library/openjdk:17-jdk-alpine
+FROM eclipse-temurin:25
 WORKDIR /app
 
 # Copy the pre-built jar from your host machine

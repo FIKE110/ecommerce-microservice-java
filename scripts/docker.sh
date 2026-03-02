@@ -10,14 +10,28 @@ cd "$PROJECT_DIR"
 docker_build() {
     echo "Building Docker images..."
     
-    echo "Building admin-server..."
-    docker build -t ecommerce/admin-server:latest ./admin-server/
+    SERVICES=(
+        "admin-server"
+        "api-docs"
+        "api-gateway"
+        "auth-service"
+        "cart-service"
+        "config-server"
+        "customer-service"
+        "inventory-service"
+        "notification-service"
+        "order-service"
+        "payment-service"
+        "product-service"
+        "service-discovery"
+    )
     
-    echo "Building cart-service..."
-    docker build -t ecommerce/cart-service:latest ./cart-service/
-    
-    echo "Building api-docs..."
-    docker build -t ecommerce/api-docs:latest ./api-docs/
+    for svc in "${SERVICES[@]}"; do
+        if [ -d "./$svc" ] && [ -f "./$svc/Dockerfile" ]; then
+            echo "Building $svc..."
+            docker build -t "ecommerce/$svc:latest" ./$svc/
+        fi
+    done
     
     echo "✓ All Docker images built"
 }
