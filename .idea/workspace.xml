@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a478c6-c4ae-4b0d-9c87-dad162f76c2a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/admin-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/admin-server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/api-gateway.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/api-gateway.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cart-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/config-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/config-server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/customer-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/customer-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/inventory-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/inventory-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/notification-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/notification-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/order-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/order-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/payment-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/payment-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/product-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/product-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/service-discovery.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/service-discovery.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/fortune/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/dto/ProductResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/dto/ProductResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/fortune/product/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/pages/OrderDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/pages/OrderDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/pages/OrderPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/pages/OrderPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,7 +368,7 @@
       <workItem from="1771634188831" duration="2263000" />
       <workItem from="1772192915421" duration="631000" />
       <workItem from="1772318060073" duration="659000" />
-      <workItem from="1772440193141" duration="302000" />
+      <workItem from="1772440193141" duration="835000" />
     </task>
     <servers />
   </component>
