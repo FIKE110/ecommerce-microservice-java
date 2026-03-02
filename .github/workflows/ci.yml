@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  DOCKERHUB_USERNAME=${{secrets.DOCKER_USERNAME}}
+  DOCKERHUB_USERNAME: "${{secrets.DOCKER_USERNAME}}"
 
 
 jobs:
