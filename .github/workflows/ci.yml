@@ -23,3 +23,6 @@ jobs:
 
       - name: Build with maven
         run: mvn clean install
+
+      - name: Build with script
+        run: ./scripts/build.sh
