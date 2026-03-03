@@ -1,7 +1,7 @@
 package com.fortune.cart.dto;
 
-import com.fortune.order.enumeration.OrderStatus;
-import com.fortune.order.model.ProductItem;
+import com.fortune.cart.enumeration.OrderStatus;
+import com.fortune.cart.model.ProductItem;
 
 import java.util.List;
 
