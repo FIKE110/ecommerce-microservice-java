@@ -44,7 +44,7 @@ jobs:
       - name: push to dockerhub
         run: ./scripts/docker.sh push
 
-      - name: Execute remote SSH commands using password
+      - name: Execute remote SSH commands on vps
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.VPS_HOST }}
