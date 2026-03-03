@@ -1,6 +1,70 @@
 services:
-  service-name:
-    image: adminserver:lastest
-    build: ./admin-server/Dockerfile
+  config-server:
+    image: fortuneiyke/ecommerce-config-server:latest
+    ports:
+      - 8888:8888
+
+  service-discovery:
+    image: fortuneiyke/ecommerce-service-discovery:latest
+    ports:
+      - 8761:8761
+
+  auth-service:
+    image: fortuneiyke/ecommerce-auth-service:latest
+    ports:
+      - 8081:8081
+
+  customer-service:
+    image:  fortuneiyke/ecommerce-customer-service:latest
+    ports:
+      - 8080:8080
+
+  product-service:
+    image:  fortuneiyke/ecommerce-product-service:latest
+    ports:
+      - 8082:8082
+
+  inventory-service:
+    image:  fortuneiyke/ecommerce-inventory-service:latest
+    ports:
+      - 8083:8083
+
+  order-service:
+    image: ecommerce-order-service:latest
+    ports:
+      - 8084:8084
+
+  payment-service:
+    image:  fortuneiyke/ecommerce-payment-service:latest
+    ports:
+      - 8085:8085
+
+  notification-service:
+    image:  fortuneiyke/ecommerce-notification-service:latest
+    ports:
+      - 8086:8086
+
+  cart-service:
+    image:  fortuneiyke/ecommerce-cart-service:latest
+    ports:
+      - 8087:8087
+
+  api-gateway:
+    image:  fortuneiyke/ecommerce-api-gateway:latest
+    ports:
+      - 8000:8000
+
+  admin-server:
+    image:  fortuneiyke/ecommerce-admin-server:latest
     ports:
       - 9090:9090
+
+  api-docs:
+    image:  fortuneiyke/ecommerce-api-docs:latest
+    ports:
+      - 9091:9091
+
+  webapp:
+    image:  fortuneiyke/ecommerce-webapp:latest
+    ports:
+      - 3000:3000
