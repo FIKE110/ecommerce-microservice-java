@@ -3,63 +3,93 @@ services:
     image: fortuneiyke/ecommerce-config-server:latest
     ports:
       - ${CONFIG_SERVER_PORT:-8888}:8888
+    networks:
+      - ecommerce-network
 
   service-discovery:
     image: fortuneiyke/ecommerce-service-discovery:latest
     ports:
       - ${EUREKA_PORT:-8761}:8761
+    networks:
+      - ecommerce-network
 
   auth-service:
     image: fortuneiyke/ecommerce-auth-service:latest
     ports:
       - ${AUTH_SERVICE_PORT:-8081}:8081
+    networks:
+      - ecommerce-network
 
   customer-service:
     image:  fortuneiyke/ecommerce-customer-service:latest
     ports:
       - ${CUSTOMER_SERVICE_PORT:-8080}:8080
+    networks:
+      - ecommerce-network
 
   product-service:
     image:  fortuneiyke/ecommerce-product-service:latest
     ports:
       - ${PRODUCT_SERVICE_PORT:-8082}:8082
+    networks:
+      - ecommerce-network
 
   inventory-service:
     image:  fortuneiyke/ecommerce-inventory-service:latest
     ports:
       - ${INVENTORY_SERVICE_PORT:-8083}:8083
+    networks:
+      - ecommerce-network
 
   order-service:
     image: fortuneiyke/ecommerce-order-service:latest
     ports:
       - ${ORDER_SERVICE_PORT:-8084}:8084
+    networks:
+      - ecommerce-network
 
   payment-service:
     image:  fortuneiyke/ecommerce-payment-service:latest
     ports:
       - ${PAYMENT_SERVICE_PORT:-8085}:8085
+    networks:
+      - ecommerce-network
 
   notification-service:
     image:  fortuneiyke/ecommerce-notification-service:latest
     ports:
       - ${NOTIFICATION_SERVICE_PORT:-8086}:8086
+    networks:
+      - ecommerce-network
 
   cart-service:
     image:  fortuneiyke/ecommerce-cart-service:latest
     ports:
       - ${CART_SERVICE_PORT:-8087}:8087
+    networks:
+      - ecommerce-network
 
   api-gateway:
     image:  fortuneiyke/ecommerce-api-gateway:latest
     ports:
       - ${API_GATEWAY_PORT:-8000}:8000
+    networks:
+      - ecommerce-network
 
   admin-server:
     image:  fortuneiyke/ecommerce-admin-server:latest
     ports:
       - ${ADMIN_SERVER_PORT:-9090}:9090
+    networks:
+      - ecommerce-network
 
   api-docs:
     image:  fortuneiyke/ecommerce-api-docs:latest
     ports:
       - ${API_DOCS_PORT:-9091}:9091
+    networks:
+      - ecommerce-network
+
+networks:
+  ecommerce-network:
+    driver: bridge
