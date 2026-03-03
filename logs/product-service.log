@@ -15,247 +15,321 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [[1;34mINFO[m] Copying 3 resources
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mproduct-service[0;1m ---[m
-[[1;34mINFO[m] Changes detected - recompiling the module!
-[[1;34mINFO[m] Compiling 21 source files to /home/fortune/Documents/projects/ecommerce/product-service/target/classes
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;33mWARNING[m] COMPILATION WARNING : 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;33mWARNING[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[93,17] <T>where(org.springframework.data.jpa.domain.Specification<T>) in org.springframework.data.jpa.domain.Specification has been deprecated and marked for removal
-[[1;34mINFO[m] 1 warning
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;31mERROR[m] COMPILATION ERROR : 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[42,34] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[43,30] cannot find symbol
-  symbol:   method getName()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[45,31] cannot find symbol
-  symbol:   method getPrice()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[46,31] cannot find symbol
-  symbol:   method getBrand()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[47,34] cannot find symbol
-  symbol:   method getCategory()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[48,30] cannot find symbol
-  symbol:   method getTags()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[50,37] cannot find symbol
-  symbol:   method getDescription()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[51,32] cannot find symbol
-  symbol:   method getImages()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[52,34] cannot find symbol
-  symbol:   method getDiscount()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[59,53] cannot find symbol
-  symbol:   method getId()
-  location: variable product of type com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[59,91] cannot find symbol
-  symbol:   method getQuantity()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[68,12] cannot find symbol
-  symbol:   method setQuantity(long)
-  location: variable dto of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[73,105] cannot find symbol
-  symbol:   method getPrice()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[110,32] cannot find symbol
-  symbol:   method getName()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[111,33] cannot find symbol
-  symbol:   method getPrice()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[112,33] cannot find symbol
-  symbol:   method getBrand()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[113,36] cannot find symbol
-  symbol:   method getDiscount()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[114,35] cannot find symbol
-  symbol:   method getCategory()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[115,31] cannot find symbol
-  symbol:   method getTags()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[116,38] cannot find symbol
-  symbol:   method getDescription()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[117,33] cannot find symbol
-  symbol:   method getImages()
-  location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/GreetingController.java:[19,9] cannot find symbol
-  symbol:   variable log
-  location: class com.fortune.product.controller.GreetingController
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[27,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[47,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[68,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[89,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[110,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[132,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[154,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[176,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[198,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[220,24] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[64,20] cannot find symbol
-  symbol:   method getImages()
-  location: variable product of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[64,51] cannot find symbol
-  symbol:   method getImages()
-  location: variable product of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[70,45] cannot find symbol
-  symbol:   method getImages()
-  location: variable product of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[80,65] cannot find symbol
-  symbol:   method getName()
-  location: class com.fortune.product.dto.ProductResponseDto
-[[1;34mINFO[m] 36 errors 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] [1;31mBUILD FAILURE[m
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  5.772 s
-[[1;34mINFO[m] Finished at: 2026-02-21T13:15:05+01:00
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.1:compile[m [1m(default-compile)[m on project [36mproduct-service[m: [1;31mCompilation failure[m: Compilation failure: 
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[42,34] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[43,30] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getName()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[45,31] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getPrice()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[46,31] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getBrand()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[47,34] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getCategory()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[48,30] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getTags()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[50,37] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getDescription()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[51,32] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getImages()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[52,34] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getDiscount()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[59,53] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getId()
-[[1;31mERROR[m]   location: variable product of type com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[59,91] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getQuantity()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[68,12] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setQuantity(long)
-[[1;31mERROR[m]   location: variable dto of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[73,105] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getPrice()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[110,32] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getName()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[111,33] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getPrice()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[112,33] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getBrand()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[113,36] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getDiscount()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[114,35] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getCategory()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[115,31] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getTags()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[116,38] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getDescription()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/ProductService.java:[117,33] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getImages()
-[[1;31mERROR[m]   location: variable request of type com.fortune.product.request.ProductRequest
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/GreetingController.java:[19,9] cannot find symbol
-[[1;31mERROR[m]   symbol:   variable log
-[[1;31mERROR[m]   location: class com.fortune.product.controller.GreetingController
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[27,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[47,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[68,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[89,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[110,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[132,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[154,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[176,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[198,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/service/DataInitializerService.java:[220,24] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.product.entity.Product
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[64,20] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getImages()
-[[1;31mERROR[m]   location: variable product of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[64,51] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getImages()
-[[1;31mERROR[m]   location: variable product of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[70,45] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getImages()
-[[1;31mERROR[m]   location: variable product of type com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/product-service/src/main/java/com/fortune/product/controller/ProductController.java:[80,65] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getName()
-[[1;31mERROR[m]   location: class com.fortune.product.dto.ProductResponseDto
-[[1;31mERROR[m] -> [1m[Help 1][m
-[[1;31mERROR[m] 
-[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
-[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
-[[1;31mERROR[m] 
-[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
-[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[0m[0m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mproduct-service[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/fortune/Documents/projects/ecommerce/product-service/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mproduct-service[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mproduct-service[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[m @ [36mproduct-service[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+██████╗ ██████╗  ██████╗ ██████╗ ██╗   ██╗ ██████╗████████╗
+██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║   ██║██╔════╝╚══██╔══╝
+██████╔╝██████╔╝██║   ██║██║  ██║██║   ██║██║        ██║
+██╔═══╝ ██╔══██╗██║   ██║██║  ██║██║   ██║██║        ██║
+██║     ██║  ██║╚██████╔╝██████╔╝╚██████╔╝╚██████╗   ██║
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝  ╚═════╝   ╚═╝
+
+2026-03-03T20:53:40.086+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] c.f.product.ProductServiceApplication    : Starting ProductServiceApplication using Java 25.0.2 with PID 24381 (/home/fortune/Documents/projects/ecommerce/product-service/target/classes started by fortune in /home/fortune/Documents/projects/ecommerce/product-service)
+2026-03-03T20:53:40.090+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] c.f.product.ProductServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T20:53:42.331+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T20:53:42.587+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 243 ms. Found 1 JPA repository interface.
+2026-03-03T20:53:43.129+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bcf289e0-654a-3a2f-b2ee-0e3e7f2b15eb
+2026-03-03T20:53:44.039+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-03-03T20:53:44.067+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-03T20:53:44.068+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-03-03T20:53:44.154+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-03T20:53:44.155+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3963 ms
+2026-03-03T20:53:44.961+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-03T20:53:45.033+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-03-03T20:53:45.093+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-03T20:53:45.629+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T20:53:45.674+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T20:53:45.924+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52d434c1
+2026-03-03T20:53:45.927+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T20:53:46.036+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T20:53:47.660+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T20:53:48.211+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.modelmapper.internal.typetools.TypeResolver (file:/home/fortune/.m2/repository/org/modelmapper/modelmapper/3.2.0/modelmapper-3.2.0.jar)
+WARNING: Please consider reporting this to the maintainers of class org.modelmapper.internal.typetools.TypeResolver
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+2026-03-03T20:53:49.125+01:00  WARN 24381 --- [product-service] [           main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T20:53:49.394+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'inventory-service' URL not provided. Will try picking an instance via load-balancing.
+Hibernate: select count(*) from product p1_0
+2026-03-03T20:53:51.107+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2026-03-03T20:53:52.721+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-03-03T20:53:52.793+01:00  WARN 24381 --- [product-service] [           main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-03T20:53:52.952+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-03T20:53:53.000+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-03T20:53:53.007+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-03T20:53:53.036+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-03T20:53:53.036+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-03T20:53:53.037+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-03T20:53:53.039+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-03T20:53:53.040+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-03T20:53:53.040+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-03T20:53:53.040+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-03T20:53:54.055+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-03T20:53:54.059+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-03T20:53:54.063+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-03T20:53:54.067+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1772567634066 with initial instances count: 2
+2026-03-03T20:53:54.077+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2026-03-03T20:53:54.079+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772567634079, current=UP, previous=STARTING]
+2026-03-03T20:53:54.085+01:00  INFO 24381 --- [product-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5: registering service...
+2026-03-03T20:53:54.196+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-03-03T20:53:54.201+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-03-03T20:53:54.279+01:00  INFO 24381 --- [product-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5 - registration status: 204
+2026-03-03T20:53:54.322+01:00  INFO 24381 --- [product-service] [           main] [                                                 ] c.f.product.ProductServiceApplication    : Started ProductServiceApplication in 15.16 seconds (process running for 15.909)
+2026-03-03T20:53:55.284+01:00  WARN 24381 --- [product-service] [/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-03-03T20:53:55.284+01:00  WARN 24381 --- [product-service] [/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:923) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.3.jar:3.5.3]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.3.jar:3.5.3]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.3.jar:3.5.3]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1070) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:223) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:277) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:235) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:955) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:932) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:531) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1794) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:942) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:211) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2026-03-03T20:54:23.615+01:00  INFO 24381 --- [product-service] [nio-8082-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03T20:54:23.615+01:00  INFO 24381 --- [product-service] [nio-8082-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T20:54:23.619+01:00  INFO 24381 --- [product-service] [nio-8082-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-03-03T20:54:23.723+01:00  INFO 24381 --- [product-service] [nio-8082-exec-1] [69a73c6f5553192d9f2657976e090023-2aa11bab1527bee6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-03-03T20:54:23.808+01:00  INFO 24381 --- [product-service] [nio-8082-exec-1] [69a73c6f5553192d9f2657976e090023-2aa11bab1527bee6] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#16745ba7:0/SimpleConnection@7020e848 [delegate=amqp://guest@127.0.0.1:5672/, localPort=50676]
+[0m[0m2026-03-03T20:57:44.119+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+2026-03-03T20:57:44.120+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772567864120, current=DOWN, previous=UP]
+2026-03-03T20:57:44.123+01:00  INFO 24381 --- [product-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5: registering service...
+2026-03-03T20:57:44.129+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03T20:57:44.155+01:00  INFO 24381 --- [product-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-03T20:57:44.157+01:00  INFO 24381 --- [product-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5 - registration status: 204
+2026-03-03T20:57:44.241+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T20:57:44.244+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T20:57:44.257+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-03T20:57:44.460+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-03T20:57:47.462+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-03T20:57:47.479+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5": Connect to http://localhost:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 37 more
+
+2026-03-03T20:57:47.480+01:00  WARN 24381 --- [product-service] [ionShutdownHook] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:57:47.493+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5": Connect to http://localhost:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 38 more
+
+2026-03-03T20:57:47.494+01:00  WARN 24381 --- [product-service] [ionShutdownHook] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:57:47.494+01:00 ERROR 24381 --- [product-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/product-service:681548dcad1ac3c99bb38560c11e77e5 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.5.3.jar:3.5.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.3.jar:3.5.3]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-03T20:57:47.495+01:00  INFO 24381 --- [product-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

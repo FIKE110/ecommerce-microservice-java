@@ -15,214 +15,416 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [[1;34mINFO[m] Copying 1 resource
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36morder-service[0;1m ---[m
-[[1;34mINFO[m] Changes detected - recompiling the module!
-[[1;34mINFO[m] Compiling 20 source files to /home/fortune/Documents/projects/ecommerce/order-service/target/classes
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;33mWARNING[m] COMPILATION WARNING : 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;33mWARNING[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java: /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java uses unchecked or unsafe operations.
-[[1;33mWARNING[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java: Recompile with -Xlint:unchecked for details.
-[[1;34mINFO[m] 2 warnings 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;31mERROR[m] COMPILATION ERROR : 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java:[37,21] cannot find symbol
-  symbol:   method getProducts()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[48,14] cannot find symbol
-  symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[53,14] cannot find symbol
-  symbol:   method setTxnReference(java.lang.String)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[54,14] cannot find symbol
-  symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[59,14] cannot find symbol
-  symbol:   method setPaymentLink(java.lang.String)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[69,28] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[75,78] invalid method reference
-  cannot find symbol
-    symbol:   method getPrice(T)
-    location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[82,29] cannot find symbol
-  symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[90,14] cannot find symbol
-  symbol:   method setDeliveryTime(java.time.LocalDateTime)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[91,14] cannot find symbol
-  symbol:   method setShippingTime(java.time.LocalDateTime)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[97,14] cannot find symbol
-  symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[118,33] cannot find symbol
-  symbol:   method getStatus()
-  location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[119,36] cannot find symbol
-  symbol:   method getOrderTime()
-  location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[120,39] cannot find symbol
-  symbol:   method getDeliveryTime()
-  location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[128,41] cannot find symbol
-  symbol:   method builder()
-  location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[140,27] cannot find symbol
-  symbol:   method getUsername()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[143,29] cannot find symbol
-  symbol:   method getProducts()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[154,62] cannot find symbol
-  symbol:   method getProducts()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[49,30] cannot find symbol
-  symbol:   method getShippingTime()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[50,39] cannot find symbol
-  symbol:   method getShippingTime()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[52,37] cannot find symbol
-  symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[76,30] cannot find symbol
-  symbol:   method getDeliveryTime()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[77,39] cannot find symbol
-  symbol:   method getDeliveryTime()
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[79,37] cannot find symbol
-  symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-  location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[72,32] cannot find symbol
-  symbol:   method getInvoiceLink()
-  location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[73,60] cannot find symbol
-  symbol:   method getReference()
-  location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[75,62] cannot find symbol
-  symbol:   method getReference()
-  location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[87,32] cannot find symbol
-  symbol:   method getInvoiceLink()
-  location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[88,60] cannot find symbol
-  symbol:   method getReference()
-  location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[90,62] cannot find symbol
-  symbol:   method getReference()
-  location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;34mINFO[m] 30 errors 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] [1;31mBUILD FAILURE[m
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  6.346 s
-[[1;34mINFO[m] Finished at: 2026-02-21T13:15:20+01:00
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.1:compile[m [1m(default-compile)[m on project [36morder-service[m: [1;31mCompilation failure[m: Compilation failure: 
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/RabbitMQService.java:[37,21] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getProducts()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[48,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[53,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setTxnReference(java.lang.String)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[54,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[59,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setPaymentLink(java.lang.String)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[69,28] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[75,78] invalid method reference
-[[1;31mERROR[m]   cannot find symbol
-[[1;31mERROR[m]     symbol:   method getPrice(T)
-[[1;31mERROR[m]     location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[82,29] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[90,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setDeliveryTime(java.time.LocalDateTime)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[91,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setShippingTime(java.time.LocalDateTime)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[97,14] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[118,33] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getStatus()
-[[1;31mERROR[m]   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[119,36] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getOrderTime()
-[[1;31mERROR[m]   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[120,39] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getDeliveryTime()
-[[1;31mERROR[m]   location: variable orderDto of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[128,41] cannot find symbol
-[[1;31mERROR[m]   symbol:   method builder()
-[[1;31mERROR[m]   location: class com.fortune.order.model.ProductItem
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[140,27] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getUsername()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[143,29] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getProducts()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderService.java:[154,62] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getProducts()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[49,30] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getShippingTime()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[50,39] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getShippingTime()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[52,37] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[76,30] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getDeliveryTime()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[77,39] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getDeliveryTime()
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/service/OrderTrackerService.java:[79,37] cannot find symbol
-[[1;31mERROR[m]   symbol:   method setStatus(com.fortune.order.enumeration.OrderStatus)
-[[1;31mERROR[m]   location: variable order of type com.fortune.order.model.Order
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[72,32] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getInvoiceLink()
-[[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[73,60] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getReference()
-[[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[75,62] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getReference()
-[[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[87,32] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getInvoiceLink()
-[[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[88,60] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getReference()
-[[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] /home/fortune/Documents/projects/ecommerce/order-service/src/main/java/com/fortune/order/controller/OrderController.java:[90,62] cannot find symbol
-[[1;31mERROR[m]   symbol:   method getReference()
-[[1;31mERROR[m]   location: variable checkoutUrl of type com.fortune.order.model.PaymentResponseCheckout
-[[1;31mERROR[m] -> [1m[Help 1][m
-[[1;31mERROR[m] 
-[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
-[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
-[[1;31mERROR[m] 
-[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
-[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[0m[0m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36morder-service[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/fortune/Documents/projects/ecommerce/order-service/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36morder-service[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36morder-service[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[m @ [36morder-service[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2026-03-03T20:53:57.284+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] c.fortune.order.OrderSpringApplication   : Starting OrderSpringApplication using Java 25.0.2 with PID 24859 (/home/fortune/Documents/projects/ecommerce/order-service/target/classes started by fortune in /home/fortune/Documents/projects/ecommerce/order-service)
+2026-03-03T20:53:57.290+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] c.fortune.order.OrderSpringApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T20:53:59.653+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T20:53:59.918+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 246 ms. Found 1 JPA repository interface.
+2026-03-03T20:54:00.593+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e678eb4d-d86c-3f3c-b79d-faae6d2cb98e
+2026-03-03T20:54:01.397+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2026-03-03T20:54:01.452+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-03T20:54:01.453+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-03-03T20:54:01.572+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-03T20:54:01.574+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4180 ms
+2026-03-03T20:54:02.503+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-03T20:54:02.569+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-03-03T20:54:02.620+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-03T20:54:03.041+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T20:54:03.074+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T20:54:03.267+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71098fb3
+2026-03-03T20:54:03.270+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T20:54:03.398+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T20:54:04.715+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T20:54:04.905+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T20:54:05.461+01:00  WARN 24859 --- [order-service] [           main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T20:54:06.487+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-03T20:54:06.559+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'payment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-03T20:54:06.588+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'customer-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-03T20:54:06.612+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'product-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-03T20:54:06.719+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'inventory-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-03T20:54:07.902+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-03-03T20:54:07.936+01:00  WARN 24859 --- [order-service] [           main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-03T20:54:07.955+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2026-03-03T20:54:08.088+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-03T20:54:08.113+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-03T20:54:08.118+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-03T20:54:08.127+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-03T20:54:08.127+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-03T20:54:08.127+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-03T20:54:08.128+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-03T20:54:08.128+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-03T20:54:08.128+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-03T20:54:08.128+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-03T20:54:08.497+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-03T20:54:08.499+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-03T20:54:08.501+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-03T20:54:08.503+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1772567648502 with initial instances count: 4
+2026-03-03T20:54:08.507+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2026-03-03T20:54:08.508+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772567648508, current=UP, previous=STARTING]
+2026-03-03T20:54:08.510+01:00  INFO 24859 --- [order-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa: registering service...
+2026-03-03T20:54:08.523+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2026-03-03T20:54:08.524+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-03-03T20:54:08.554+01:00  INFO 24859 --- [order-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa - registration status: 204
+2026-03-03T20:54:08.812+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-03-03T20:54:08.854+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4170ee0f:0/SimpleConnection@5a7810e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54080]
+2026-03-03T20:54:08.937+01:00  INFO 24859 --- [order-service] [           main] [                                                 ] c.fortune.order.OrderSpringApplication   : Started OrderSpringApplication in 12.643 seconds (process running for 13.77)
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+Hibernate: select p1_0.order_id,p1_0.price,p1_0.product_id,p1_0.product_name,p1_0.quantity from order_products p1_0 where p1_0.order_id=?
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+2026-03-03T20:54:09.561+01:00  WARN 24859 --- [order-service] [/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-03-03T20:54:09.561+01:00  WARN 24859 --- [order-service] [/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 3 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:923) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.3.jar:3.5.3]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.3.jar:3.5.3]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.3.jar:3.5.3]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1070) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:223) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:277) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:235) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:955) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:932) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:531) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1794) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:942) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:211) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2026-03-03T20:54:23.633+01:00  INFO 24859 --- [order-service] [nio-8084-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03T20:54:23.633+01:00  INFO 24859 --- [order-service] [nio-8084-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T20:54:23.637+01:00  INFO 24859 --- [order-service] [nio-8084-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+Hibernate: select p1_0.order_id,p1_0.price,p1_0.product_id,p1_0.product_name,p1_0.quantity from order_products p1_0 where p1_0.order_id=?
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+Hibernate: select p1_0.order_id,p1_0.price,p1_0.product_id,p1_0.product_name,p1_0.quantity from order_products p1_0 where p1_0.order_id=?
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+Hibernate: select p1_0.order_id,p1_0.price,p1_0.product_id,p1_0.product_name,p1_0.quantity from order_products p1_0 where p1_0.order_id=?
+Hibernate: select o1_0.id,o1_0.created_at,o1_0.delivery_time,o1_0.order_time,o1_0.payment_link,o1_0.shipping_time,o1_0.status,o1_0.total_price,o1_0.txn_reference,o1_0.updated_at,o1_0.username from orders o1_0 where o1_0.status=? fetch first ? rows only
+[0m[0m2026-03-03T20:57:44.124+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2026-03-03T20:57:44.125+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772567864125, current=DOWN, previous=UP]
+2026-03-03T20:57:44.128+01:00  INFO 24859 --- [order-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa: registering service...
+2026-03-03T20:57:44.153+01:00  INFO 24859 --- [order-service] [ntContainer#0-2] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2026-03-03T20:57:44.161+01:00  INFO 24859 --- [order-service] [foReplicator-%d] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": localhost:8761 failed to respond stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": localhost:8761 failed to respond
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.apache.hc.core5.http.NoHttpResponseException: localhost:8761 failed to respond
+	at org.apache.hc.core5.http.impl.io.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:333)
+	at org.apache.hc.core5.http.impl.io.HttpRequestExecutor.execute(HttpRequestExecutor.java:196)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.lambda$execute$0(InternalExecRuntime.java:236)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager$InternalConnectionEndpoint.execute(PoolingHttpClientConnectionManager.java:791)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.execute(InternalExecRuntime.java:233)
+	at org.apache.hc.client5.http.impl.classic.MainClientExec.execute(MainClientExec.java:120)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:200)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 21 more
+
+2026-03-03T20:57:44.161+01:00  WARN 24859 --- [order-service] [foReplicator-%d] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": localhost:8761 failed to respond
+2026-03-03T20:57:44.195+01:00  INFO 24859 --- [order-service] [foReplicator-%d] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": Connect to http://localhost:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 22 more
+
+2026-03-03T20:57:44.196+01:00  WARN 24859 --- [order-service] [foReplicator-%d] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:57:44.198+01:00  WARN 24859 --- [order-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-03T20:57:44.199+01:00  WARN 24859 --- [order-service] [foReplicator-%d] [                                                 ] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-03T20:57:44.966+01:00  INFO 24859 --- [order-service] [ntContainer#0-2] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2026-03-03T20:57:44.968+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03T20:57:44.977+01:00  INFO 24859 --- [order-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-03T20:57:45.013+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T20:57:45.016+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T20:57:45.022+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-03T20:57:45.744+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-03T20:57:48.746+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-03T20:57:48.770+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa": Connect to http://localhost:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 38 more
+
+2026-03-03T20:57:48.771+01:00  WARN 24859 --- [order-service] [ionShutdownHook] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:57:48.771+01:00 ERROR 24859 --- [order-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/order-service:5efe975a293467dfeea761c33ef1dbfa - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.5.3.jar:3.5.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.3.jar:3.5.3]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-03T20:57:48.773+01:00  INFO 24859 --- [order-service] [ionShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

@@ -43,573 +43,60 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 ███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║
 ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
 
-2026-02-21T13:14:41.149+01:00  INFO 111826 --- [admin-server] [           main] c.fortune.admin.AdminServerApplication   : Starting AdminServerApplication using Java 25.0.2 with PID 111826 (/home/fortune/Documents/projects/ecommerce/admin-server/target/classes started by fortune in /home/fortune/Documents/projects/ecommerce/admin-server)
-2026-02-21T13:14:41.151+01:00  INFO 111826 --- [admin-server] [           main] c.fortune.admin.AdminServerApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-02-21T13:14:42.084+01:00  INFO 111826 --- [admin-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea894227-4df0-3177-8e05-6ac2d8c42966
+2026-03-03T20:53:18.408+01:00  INFO 23966 --- [admin-server] [           main] c.fortune.admin.AdminServerApplication   : Starting AdminServerApplication using Java 25.0.2 with PID 23966 (/home/fortune/Documents/projects/ecommerce/admin-server/target/classes started by fortune in /home/fortune/Documents/projects/ecommerce/admin-server)
+2026-03-03T20:53:18.411+01:00  INFO 23966 --- [admin-server] [           main] c.fortune.admin.AdminServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T20:53:19.712+01:00  INFO 23966 --- [admin-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea894227-4df0-3177-8e05-6ac2d8c42966
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/home/fortune/.m2/repository/io/netty/netty-common/4.1.122.Final/netty-common-4.1.122.Final.jar)
 WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
 WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
-2026-02-21T13:14:42.558+01:00  WARN 111826 --- [admin-server] [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2026-02-21T13:14:43.069+01:00  INFO 111826 --- [admin-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-02-21T13:14:43.547+01:00  INFO 111826 --- [admin-server] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2026-02-21T13:14:43.783+01:00  WARN 111826 --- [admin-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-02-21T13:14:43.841+01:00  INFO 111826 --- [admin-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-02-21T13:14:43.863+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-02-21T13:14:43.868+01:00  INFO 111826 --- [admin-server] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:14:43.876+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-02-21T13:14:43.876+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-02-21T13:14:43.876+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-02-21T13:14:43.876+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-02-21T13:14:43.876+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-02-21T13:14:43.876+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-02-21T13:14:43.876+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-02-21T13:14:44.381+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-02-21T13:14:44.384+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-02-21T13:14:44.386+01:00  INFO 111826 --- [admin-server] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-02-21T13:14:44.390+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1771676084388 with initial instances count: 1
-2026-02-21T13:14:44.397+01:00  INFO 111826 --- [admin-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVER with eureka with status UP
-2026-02-21T13:14:44.397+01:00  INFO 111826 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771676084397, current=UP, previous=STARTING]
-2026-02-21T13:14:44.400+01:00  INFO 111826 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090: registering service...
+2026-03-03T20:53:20.522+01:00  WARN 23966 --- [admin-server] [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-03-03T20:53:21.371+01:00  INFO 23966 --- [admin-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-03T20:53:21.894+01:00  INFO 23966 --- [admin-server] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-03-03T20:53:22.224+01:00  WARN 23966 --- [admin-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-03T20:53:22.292+01:00  INFO 23966 --- [admin-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-03T20:53:22.318+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-03T20:53:22.323+01:00  INFO 23966 --- [admin-server] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-03T20:53:22.332+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-03T20:53:22.332+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-03T20:53:22.332+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-03T20:53:22.332+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-03T20:53:22.332+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-03T20:53:22.332+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-03T20:53:22.332+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-03T20:53:22.948+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-03T20:53:22.950+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-03T20:53:22.951+01:00  INFO 23966 --- [admin-server] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-03T20:53:22.955+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1772567602953 with initial instances count: 0
+2026-03-03T20:53:22.958+01:00  INFO 23966 --- [admin-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVER with eureka with status UP
+2026-03-03T20:53:22.959+01:00  INFO 23966 --- [admin-server] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772567602959, current=UP, previous=STARTING]
+2026-03-03T20:53:22.961+01:00  INFO 23966 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.96.81.176:admin-server:9090: registering service...
 WARNING: A restricted method in java.lang.System has been called
 WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/home/fortune/.m2/repository/io/netty/netty-common/4.1.122.Final/netty-common-4.1.122.Final.jar)
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-2026-02-21T13:14:44.509+01:00  INFO 111826 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090 - registration status: 204
-2026-02-21T13:14:44.574+01:00  INFO 111826 --- [admin-server] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9090 (http)
-2026-02-21T13:14:44.576+01:00  INFO 111826 --- [admin-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
-2026-02-21T13:14:45.156+01:00  INFO 111826 --- [admin-server] [           main] c.fortune.admin.AdminServerApplication   : Started AdminServerApplication in 4.436 seconds (process running for 4.972)
-2026-02-21T13:15:14.436+01:00  INFO 111826 --- [admin-server] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090 - Re-registering apps/ADMIN-SERVER
-2026-02-21T13:15:14.436+01:00  INFO 111826 --- [admin-server] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090: registering service...
-2026-02-21T13:15:14.447+01:00  INFO 111826 --- [admin-server] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090 - registration status: 204
-2026-02-21T13:19:43.877+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:24:43.878+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:29:43.881+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:34:43.883+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:39:43.885+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:44:43.887+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:49:43.888+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:54:43.888+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T13:59:43.922+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T14:04:43.927+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T14:09:43.928+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T14:14:43.932+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T14:19:43.933+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T14:24:43.934+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:15:10.606+01:00  WARN 111826 --- [admin-server] [     parallel-1] d.c.b.a.server.services.IntervalCheck    : Unexpected error in status-check
-
-reactor.core.Exceptions$OverflowException: Could not emit tick 428 due to lack of requests (interval doesn't support small downstream requests that replenish slower than the ticks)
-	at reactor.core.Exceptions.failWithOverflow(Exceptions.java:251) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxInterval$IntervalRunnable.run(FluxInterval.java:131) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.PeriodicWorkerTask.call(PeriodicWorkerTask.java:59) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.PeriodicWorkerTask.run(PeriodicWorkerTask.java:73) ~[reactor-core-3.7.7.jar:3.7.7]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:21.809+01:00  INFO 111826 --- [admin-server] [or-http-epoll-4] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=a18bfd28e9f6, version=2, registration=Registration(name=PRODUCT-SERVICE, managementUrl=http://10.174.201.176:34531/actuator, healthUrl=http://10.174.201.176:34531/actuator/health, serviceUrl=http://10.174.201.176:34531, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={diskSpace={status=UP, details={total=255736295424, free=29483335680, threshold=10485760, path=/home/fortune/Documents/projects/ecommerce/., exists=true}}, ping={status=UP}, discoveryComposite={status=UP, components={discoveryClient={status=UP, details={services=[]}}, eureka={description=Remote status from Eureka server, status=UNKNOWN, details={applications={}}}}}, rabbit={status=UP, details={version=3.10.8}}, refreshScope={status=UP}, ssl={status=UP, details={validChains=[], invalidChains=[]}}, db={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}}), statusTimestamp=2026-02-21T12:15:14.698107367Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.174.201.176:34531/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.174.201.176:34531/actuator/loggers), health=Endpoint(id=health, url=http://10.174.201.176:34531/actuator/health), refresh=Endpoint(id=refresh, url=http://10.174.201.176:34531/actuator/refresh), env=Endpoint(id=env, url=http://10.174.201.176:34531/actuator/env), serviceregistry=Endpoint(id=serviceregistry, url=http://10.174.201.176:34531/actuator/serviceregistry), features=Endpoint(id=features, url=http://10.174.201.176:34531/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.174.201.176:34531/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.174.201.176:34531/actuator/mappings), beans=Endpoint(id=beans, url=http://10.174.201.176:34531/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.174.201.176:34531/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.174.201.176:34531/actuator/threaddump), sbom=Endpoint(id=sbom, url=http://10.174.201.176:34531/actuator/sbom), metrics=Endpoint(id=metrics, url=http://10.174.201.176:34531/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.174.201.176:34531/actuator/conditions), info=Endpoint(id=info, url=http://10.174.201.176:34531/actuator/info)}), buildVersion=null, tags=Tags(values={}))
-
-org.springframework.web.reactive.function.client.WebClientRequestException: null: /10.174.201.176:34531
-	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
-Error has been observed at the following site(s):
-	*__checkpoint ⇢ Request to GET health [DefaultWebClient]
-Original Stack Trace:
-		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1742) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:325) ~[reactor-netty-http-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:600) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:546) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:262) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:603) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:570) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:505) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:198) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:247) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-Caused by: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: null: /10.174.201.176:34531
-Caused by: java.net.NoRouteToHostException: null
-	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:158) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Socket.connect(Socket.java:351) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect0(AbstractEpollChannel.java:778) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollSocketChannel.doConnect0(EpollSocketChannel.java:144) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect(AbstractEpollChannel.java:763) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.connect(AbstractEpollChannel.java:602) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1289) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:657) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:618) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:545) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:891) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:228) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:240) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:21.809+01:00  INFO 111826 --- [admin-server] [or-http-epoll-5] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=99c1f4a8beef, version=2, registration=Registration(name=ORDER-SERVICE, managementUrl=http://10.174.201.176:33985/actuator, healthUrl=http://10.174.201.176:33985/actuator/health, serviceUrl=http://10.174.201.176:33985, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={diskSpace={status=UP, details={total=255736295424, free=29481021440, threshold=10485760, path=/home/fortune/Documents/projects/ecommerce/., exists=true}}, ping={status=UP}, discoveryComposite={status=UP, components={discoveryClient={status=UP, details={services=[customer-service, payment-service, auth-service, cart-service, inventory-service, product-service, api-gateway-service, admin-server]}}, eureka={description=Eureka discovery client has not yet successfully connected to a Eureka server, status=UP, details={applications={CUSTOMER-SERVICE=1, PAYMENT-SERVICE=1, AUTH-SERVICE=1, CART-SERVICE=1, INVENTORY-SERVICE=1, PRODUCT-SERVICE=1, API-GATEWAY-SERVICE=1, ADMIN-SERVER=1}}}}}, rabbit={status=UP, details={version=3.10.8}}, refreshScope={status=UP}, ssl={status=UP, details={validChains=[], invalidChains=[]}}, db={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}}), statusTimestamp=2026-02-21T12:20:15.017346107Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.174.201.176:33985/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.174.201.176:33985/actuator/loggers), health=Endpoint(id=health, url=http://10.174.201.176:33985/actuator/health), refresh=Endpoint(id=refresh, url=http://10.174.201.176:33985/actuator/refresh), env=Endpoint(id=env, url=http://10.174.201.176:33985/actuator/env), serviceregistry=Endpoint(id=serviceregistry, url=http://10.174.201.176:33985/actuator/serviceregistry), features=Endpoint(id=features, url=http://10.174.201.176:33985/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.174.201.176:33985/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.174.201.176:33985/actuator/mappings), beans=Endpoint(id=beans, url=http://10.174.201.176:33985/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.174.201.176:33985/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.174.201.176:33985/actuator/threaddump), sbom=Endpoint(id=sbom, url=http://10.174.201.176:33985/actuator/sbom), metrics=Endpoint(id=metrics, url=http://10.174.201.176:33985/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.174.201.176:33985/actuator/conditions), info=Endpoint(id=info, url=http://10.174.201.176:33985/actuator/info)}), buildVersion=null, tags=Tags(values={}))
-
-org.springframework.web.reactive.function.client.WebClientRequestException: null: /10.174.201.176:33985
-	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
-Error has been observed at the following site(s):
-	*__checkpoint ⇢ Request to GET health [DefaultWebClient]
-Original Stack Trace:
-		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1742) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:325) ~[reactor-netty-http-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:600) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:546) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:262) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:603) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:570) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:505) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:198) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:247) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-Caused by: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: null: /10.174.201.176:33985
-Caused by: java.net.NoRouteToHostException: null
-	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:158) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Socket.connect(Socket.java:351) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect0(AbstractEpollChannel.java:778) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollSocketChannel.doConnect0(EpollSocketChannel.java:144) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect(AbstractEpollChannel.java:763) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.connect(AbstractEpollChannel.java:602) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1289) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:657) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:618) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:545) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:891) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:228) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:240) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:21.815+01:00  INFO 111826 --- [admin-server] [or-http-epoll-3] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=95db03c6f0f3, version=2, registration=Registration(name=INVENTORY-SERVICE, managementUrl=http://10.174.201.176:42917/actuator, healthUrl=http://10.174.201.176:42917/actuator/health, serviceUrl=http://10.174.201.176:42917, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={diskSpace={status=UP, details={total=255736295424, free=29491949568, threshold=10485760, path=/home/fortune/Documents/projects/ecommerce/inventory-service/., exists=true}}, ping={status=UP}, discoveryComposite={status=UP, components={discoveryClient={status=UP, details={services=[product-service, api-gateway-service, admin-server]}}, eureka={description=Eureka discovery client has not yet successfully connected to a Eureka server, status=UP, details={applications={PRODUCT-SERVICE=1, API-GATEWAY-SERVICE=1, ADMIN-SERVER=1}}}}}, rabbit={status=UP, details={version=3.10.8}}, refreshScope={status=UP}, ssl={status=UP, details={validChains=[], invalidChains=[]}}, db={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}}), statusTimestamp=2026-02-21T12:15:44.857664624Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.174.201.176:42917/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.174.201.176:42917/actuator/loggers), health=Endpoint(id=health, url=http://10.174.201.176:42917/actuator/health), refresh=Endpoint(id=refresh, url=http://10.174.201.176:42917/actuator/refresh), env=Endpoint(id=env, url=http://10.174.201.176:42917/actuator/env), serviceregistry=Endpoint(id=serviceregistry, url=http://10.174.201.176:42917/actuator/serviceregistry), features=Endpoint(id=features, url=http://10.174.201.176:42917/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.174.201.176:42917/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.174.201.176:42917/actuator/mappings), beans=Endpoint(id=beans, url=http://10.174.201.176:42917/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.174.201.176:42917/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.174.201.176:42917/actuator/threaddump), sbom=Endpoint(id=sbom, url=http://10.174.201.176:42917/actuator/sbom), metrics=Endpoint(id=metrics, url=http://10.174.201.176:42917/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.174.201.176:42917/actuator/conditions), info=Endpoint(id=info, url=http://10.174.201.176:42917/actuator/info)}), buildVersion=null, tags=Tags(values={}))
-
-org.springframework.web.reactive.function.client.WebClientRequestException: null: /10.174.201.176:42917
-	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
-Error has been observed at the following site(s):
-	*__checkpoint ⇢ Request to GET health [DefaultWebClient]
-Original Stack Trace:
-		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1742) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:325) ~[reactor-netty-http-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:600) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:546) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:262) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:603) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:570) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:505) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:198) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:247) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-Caused by: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: null: /10.174.201.176:42917
-Caused by: java.net.NoRouteToHostException: null
-	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:158) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Socket.connect(Socket.java:351) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect0(AbstractEpollChannel.java:778) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollSocketChannel.doConnect0(EpollSocketChannel.java:144) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect(AbstractEpollChannel.java:763) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.connect(AbstractEpollChannel.java:602) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1289) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:657) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:618) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:545) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:891) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:228) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:240) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:21.815+01:00  INFO 111826 --- [admin-server] [or-http-epoll-2] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=b42ab3f58273, version=1, registration=Registration(name=PAYMENT-SERVICE, managementUrl=http://10.174.201.176:40067/actuator, healthUrl=http://10.174.201.176:40067/actuator/health, serviceUrl=http://10.174.201.176:40067, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2026-02-21T12:16:14.948291415Z, info=Info(values={}), endpoints=Endpoints(endpoints={health=Endpoint(id=health, url=http://10.174.201.176:40067/actuator/health)}), buildVersion=null, tags=Tags(values={}))
-
-org.springframework.web.reactive.function.client.WebClientRequestException: null: /10.174.201.176:40067
-	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
-Error has been observed at the following site(s):
-	*__checkpoint ⇢ Request to GET health [DefaultWebClient]
-Original Stack Trace:
-		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-6.2.8.jar:6.2.8]
-		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1742) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:325) ~[reactor-netty-http-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.7.7.jar:3.7.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:600) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:546) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:262) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:603) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:570) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:505) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:198) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-		at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:247) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-Caused by: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: null: /10.174.201.176:40067
-Caused by: java.net.NoRouteToHostException: null
-	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:158) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.unix.Socket.connect(Socket.java:351) ~[netty-transport-native-unix-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect0(AbstractEpollChannel.java:778) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollSocketChannel.doConnect0(EpollSocketChannel.java:144) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel.doConnect(AbstractEpollChannel.java:763) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.connect(AbstractEpollChannel.java:602) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1289) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:657) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:634) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:618) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:545) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:891) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:228) ~[netty-transport-4.1.122.Final.jar:4.1.122.Final]
-	at reactor.netty.transport.TransportConnector.lambda$doConnect$8(TransportConnector.java:240) ~[reactor-netty-core-1.2.7.jar:1.2.7]
-	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:405) ~[netty-transport-classes-epoll-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.122.Final.jar:4.1.122.Final]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:30.807+01:00  INFO 111826 --- [admin-server] [     parallel-7] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=22d0827fc716, version=2, registration=Registration(name=CART-SERVICE, managementUrl=http://10.174.201.176:44675/actuator, healthUrl=http://10.174.201.176:44675/actuator/health, serviceUrl=http://10.174.201.176:44675, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={diskSpace={status=UP, details={total=255736295424, free=29491949568, threshold=10485760, path=/home/fortune/Documents/projects/ecommerce/cart-service/., exists=true}}, ping={status=UP}, discoveryComposite={status=UP, components={discoveryClient={status=UP, details={services=[product-service, api-gateway-service, admin-server]}}, eureka={description=Eureka discovery client has not yet successfully connected to a Eureka server, status=UP, details={applications={PRODUCT-SERVICE=1, API-GATEWAY-SERVICE=1, ADMIN-SERVER=1}}}}}, rabbit={status=UP, details={version=3.10.8}}, refreshScope={status=UP}, ssl={status=UP, details={validChains=[], invalidChains=[]}}, db={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}, redis={status=UP, details={version=7.0.15}}}), statusTimestamp=2026-02-21T12:15:45.328364888Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.174.201.176:44675/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.174.201.176:44675/actuator/loggers), health=Endpoint(id=health, url=http://10.174.201.176:44675/actuator/health), refresh=Endpoint(id=refresh, url=http://10.174.201.176:44675/actuator/refresh), env=Endpoint(id=env, url=http://10.174.201.176:44675/actuator/env), serviceregistry=Endpoint(id=serviceregistry, url=http://10.174.201.176:44675/actuator/serviceregistry), features=Endpoint(id=features, url=http://10.174.201.176:44675/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.174.201.176:44675/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.174.201.176:44675/actuator/mappings), beans=Endpoint(id=beans, url=http://10.174.201.176:44675/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.174.201.176:44675/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.174.201.176:44675/actuator/threaddump), sbom=Endpoint(id=sbom, url=http://10.174.201.176:44675/actuator/sbom), metrics=Endpoint(id=metrics, url=http://10.174.201.176:44675/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.174.201.176:44675/actuator/conditions), info=Endpoint(id=info, url=http://10.174.201.176:44675/actuator/info)}), buildVersion=null, tags=Tags(values={}))
-
-java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 9000ms in 'log' (and no fallback has been configured)
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:296) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:281) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:420) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:270) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:285) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.7.jar:3.7.7]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:30.807+01:00  INFO 111826 --- [admin-server] [     parallel-1] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=f6cd7aa9dbe0, version=2, registration=Registration(name=AUTH-SERVICE, managementUrl=http://10.174.201.176:33189/actuator, healthUrl=http://10.174.201.176:33189/actuator/health, serviceUrl=http://10.174.201.176:33189, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={ssl={status=UP, details={validChains=[], invalidChains=[]}}, db={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}, diskSpace={status=UP, details={total=255736295424, free=29491949568, threshold=10485760, path=/home/fortune/Documents/projects/ecommerce/auth-service/., exists=true}}, ping={status=UP}, discoveryComposite={status=UP, components={discoveryClient={status=UP, details={services=[product-service, api-gateway-service, admin-server, auth-service, customer-service, inventory-service, cart-service]}}, eureka={description=Remote status from Eureka server, status=UP, details={applications={CUSTOMER-SERVICE=1, AUTH-SERVICE=1, CART-SERVICE=1, INVENTORY-SERVICE=1, PRODUCT-SERVICE=1, API-GATEWAY-SERVICE=1, ADMIN-SERVER=1}}}}}, refreshScope={status=UP}}), statusTimestamp=2026-02-21T12:15:44.871223109Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.174.201.176:33189/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.174.201.176:33189/actuator/loggers), health=Endpoint(id=health, url=http://10.174.201.176:33189/actuator/health), refresh=Endpoint(id=refresh, url=http://10.174.201.176:33189/actuator/refresh), env=Endpoint(id=env, url=http://10.174.201.176:33189/actuator/env), serviceregistry=Endpoint(id=serviceregistry, url=http://10.174.201.176:33189/actuator/serviceregistry), features=Endpoint(id=features, url=http://10.174.201.176:33189/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.174.201.176:33189/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.174.201.176:33189/actuator/mappings), beans=Endpoint(id=beans, url=http://10.174.201.176:33189/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.174.201.176:33189/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.174.201.176:33189/actuator/threaddump), sbom=Endpoint(id=sbom, url=http://10.174.201.176:33189/actuator/sbom), metrics=Endpoint(id=metrics, url=http://10.174.201.176:33189/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.174.201.176:33189/actuator/conditions), info=Endpoint(id=info, url=http://10.174.201.176:33189/actuator/info)}), buildVersion=null, tags=Tags(values={}))
-
-java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 9000ms in 'log' (and no fallback has been configured)
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:296) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:281) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:420) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:270) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:285) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.7.jar:3.7.7]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:30.809+01:00  INFO 111826 --- [admin-server] [     parallel-7] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=c8b0587ce72a, version=1, registration=Registration(name=ADMIN-SERVER, managementUrl=http://10.174.201.176:9090/actuator, healthUrl=http://10.174.201.176:9090/actuator/health, serviceUrl=http://10.174.201.176:9090, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2026-02-21T12:15:14.737586711Z, info=Info(values={}), endpoints=Endpoints(endpoints={health=Endpoint(id=health, url=http://10.174.201.176:9090/actuator/health)}), buildVersion=null, tags=Tags(values={}))
-
-java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 9000ms in 'log' (and no fallback has been configured)
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:296) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:281) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:420) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:270) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:285) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.7.jar:3.7.7]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:30.810+01:00  INFO 111826 --- [admin-server] [     parallel-1] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=beeaa42cae88, version=2, registration=Registration(name=CUSTOMER-SERVICE, managementUrl=http://10.174.201.176:37375/actuator, healthUrl=http://10.174.201.176:37375/actuator/health, serviceUrl=http://10.174.201.176:37375, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={ssl={status=UP, details={validChains=[], invalidChains=[]}}, db={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}, diskSpace={status=UP, details={total=255736295424, free=29491949568, threshold=10485760, path=/home/fortune/Documents/projects/ecommerce/customer-service/., exists=true}}, ping={status=UP}, discoveryComposite={status=UP, components={discoveryClient={status=UP, details={services=[product-service, api-gateway-service, admin-server, auth-service, customer-service, inventory-service, cart-service]}}, eureka={description=Remote status from Eureka server, status=UP, details={applications={CUSTOMER-SERVICE=1, AUTH-SERVICE=1, CART-SERVICE=1, INVENTORY-SERVICE=1, PRODUCT-SERVICE=1, API-GATEWAY-SERVICE=1, ADMIN-SERVER=1}}}}}, refreshScope={status=UP}}), statusTimestamp=2026-02-21T12:15:44.836554174Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.174.201.176:37375/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.174.201.176:37375/actuator/loggers), health=Endpoint(id=health, url=http://10.174.201.176:37375/actuator/health), refresh=Endpoint(id=refresh, url=http://10.174.201.176:37375/actuator/refresh), env=Endpoint(id=env, url=http://10.174.201.176:37375/actuator/env), serviceregistry=Endpoint(id=serviceregistry, url=http://10.174.201.176:37375/actuator/serviceregistry), features=Endpoint(id=features, url=http://10.174.201.176:37375/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.174.201.176:37375/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.174.201.176:37375/actuator/mappings), beans=Endpoint(id=beans, url=http://10.174.201.176:37375/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.174.201.176:37375/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.174.201.176:37375/actuator/threaddump), sbom=Endpoint(id=sbom, url=http://10.174.201.176:37375/actuator/sbom), metrics=Endpoint(id=metrics, url=http://10.174.201.176:37375/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.174.201.176:37375/actuator/conditions), info=Endpoint(id=info, url=http://10.174.201.176:37375/actuator/info)}), buildVersion=null, tags=Tags(values={}))
-
-java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 9000ms in 'log' (and no fallback has been configured)
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:296) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:281) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:420) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:270) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:285) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.7.jar:3.7.7]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:15:30.836+01:00  INFO 111826 --- [admin-server] [     parallel-5] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=8576b819a7d7, version=2, registration=Registration(name=API-GATEWAY-SERVICE, managementUrl=http://10.174.201.176:8081/actuator, healthUrl=http://10.174.201.176:8081/actuator/health, serviceUrl=http://10.174.201.176:8081, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={reactiveDiscoveryClients={status=UP, components={Simple Reactive Discovery Client={status=UP, details={services=[]}}, Spring Cloud Eureka Reactive Discovery Client={status=UP, details={services=[]}}}}, ssl={status=UP, details={validChains=[], invalidChains=[]}}, diskSpace={status=UP, details={total=255736295424, free=29483335680, threshold=10485760, path=/home/fortune/Documents/projects/ecommerce/api-gateway/., exists=true}}, ping={status=UP}, discoveryComposite={status=UP, components={discoveryClient={status=UP, details={services=[]}}, eureka={description=Eureka discovery client has not yet successfully connected to a Eureka server, status=UP, details={applications={}}}}}, refreshScope={status=UP}}), statusTimestamp=2026-02-21T12:15:15.039869619Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.174.201.176:8081/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.174.201.176:8081/actuator/loggers), health=Endpoint(id=health, url=http://10.174.201.176:8081/actuator/health), refresh=Endpoint(id=refresh, url=http://10.174.201.176:8081/actuator/refresh), env=Endpoint(id=env, url=http://10.174.201.176:8081/actuator/env), serviceregistry=Endpoint(id=serviceregistry, url=http://10.174.201.176:8081/actuator/serviceregistry), features=Endpoint(id=features, url=http://10.174.201.176:8081/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.174.201.176:8081/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.174.201.176:8081/actuator/mappings), beans=Endpoint(id=beans, url=http://10.174.201.176:8081/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.174.201.176:8081/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.174.201.176:8081/actuator/threaddump), sbom=Endpoint(id=sbom, url=http://10.174.201.176:8081/actuator/sbom), metrics=Endpoint(id=metrics, url=http://10.174.201.176:8081/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.174.201.176:8081/actuator/conditions), info=Endpoint(id=info, url=http://10.174.201.176:8081/actuator/info)}), buildVersion=null, tags=Tags(values={}))
-
-java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 9000ms in 'log' (and no fallback has been configured)
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:296) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:281) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:420) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:270) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:285) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.7.jar:3.7.7]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.7.jar:3.7.7]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-02-21T22:18:41.055+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:23:41.055+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:28:41.056+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:33:41.056+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:38:41.059+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:43:41.060+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:48:41.060+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:53:41.060+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T22:58:41.061+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:03:41.061+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:08:41.062+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:13:41.062+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:18:41.063+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:23:41.065+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:28:41.066+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:33:41.071+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:38:41.071+01:00  INFO 111826 --- [admin-server] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T23:38:58.424+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADMIN-SERVER with eureka with status DOWN
-2026-02-21T23:38:58.424+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771713538424, current=DOWN, previous=UP]
-2026-02-21T23:38:58.433+01:00  INFO 111826 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090: registering service...
-2026-02-21T23:38:58.587+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-21T23:38:58.710+01:00  INFO 111826 --- [admin-server] [ netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
-2026-02-21T23:38:59.447+01:00  INFO 111826 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090 - registration status: 204
-[0m[0m2026-02-21T23:39:00.804+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-02-21T23:39:03.805+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-02-21T23:39:03.838+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.174.201.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.174.201.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:53:23.077+01:00  INFO 23966 --- [admin-server] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9090 (http)
+2026-03-03T20:53:23.079+01:00  INFO 23966 --- [admin-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2026-03-03T20:53:23.119+01:00  INFO 23966 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.96.81.176:admin-server:9090 - registration status: 204
+2026-03-03T20:53:23.478+01:00  INFO 23966 --- [admin-server] [           main] c.fortune.admin.AdminServerApplication   : Started AdminServerApplication in 5.774 seconds (process running for 6.363)
+2026-03-03T20:53:52.953+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-03T20:53:52.953+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-03T20:53:52.953+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-03T20:53:52.954+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-03T20:53:52.954+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-03T20:53:52.954+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-03-03T20:53:52.954+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-03T20:53:53.042+01:00  INFO 23966 --- [admin-server] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+[0m[0m2026-03-03T20:57:44.123+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADMIN-SERVER with eureka with status DOWN
+2026-03-03T20:57:44.127+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772567864127, current=DOWN, previous=UP]
+2026-03-03T20:57:44.131+01:00  INFO 23966 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.96.81.176:admin-server:9090: registering service...
+2026-03-03T20:57:44.144+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03T20:57:44.153+01:00  INFO 23966 --- [admin-server] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.96.81.176:admin-server:9090 - registration status: 204
+2026-03-03T20:57:44.183+01:00  INFO 23966 --- [admin-server] [ netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2026-03-03T20:57:46.265+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-03T20:57:49.267+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-03T20:57:49.286+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.96.81.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.96.81.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -686,8 +173,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 37 more
 
-2026-02-21T23:39:03.838+01:00  WARN 111826 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.174.201.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
-2026-02-21T23:39:03.846+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.174.201.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.174.201.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:57:49.287+01:00  WARN 23966 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.96.81.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:57:49.329+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.96.81.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.96.81.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -765,8 +252,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 38 more
 
-2026-02-21T23:39:03.846+01:00  WARN 111826 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.174.201.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
-2026-02-21T23:39:03.846+01:00 ERROR 111826 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090 - de-registration failedCannot execute request on any known server
+2026-03-03T20:57:49.330+01:00  WARN 23966 --- [admin-server] [ionShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ADMIN-SERVER/10.96.81.176:admin-server:9090": Connect to http://localhost:8761 failed: Connection refused
+2026-03-03T20:57:49.331+01:00 ERROR 23966 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.96.81.176:admin-server:9090 - de-registration failedCannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
@@ -800,11 +287,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.3.jar:3.5.3]
 	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
 
-2026-02-21T23:39:03.849+01:00  INFO 111826 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-nstanceDiscoveryListener  : Instance '421af7d0527f' missing in DiscoveryClient services and will be removed.
-2026-02-21T13:14:57.090+01:00  INFO 108251 --- [admin-server] [ionShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Shutdown phase 2147482623 ends with 1 bean still running after timeout of 30000ms: [webServerGracefulShutdown]
-2026-02-21T13:14:57.090+01:00  INFO 108251 --- [admin-server] [ netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown aborted with one or more requests still active
-2026-02-21T13:14:59.114+01:00  INFO 108251 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-02-21T13:15:02.115+01:00  INFO 108251 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-02-21T13:15:02.147+01:00  INFO 108251 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/10.174.201.176:admin-server:9090 - deregister  status: 200
-2026-02-21T13:15:02.147+01:00  INFO 108251 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-03-03T20:57:49.346+01:00  INFO 23966 --- [admin-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
