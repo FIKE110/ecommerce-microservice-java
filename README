@@ -4,6 +4,7 @@ This repository contains a microservices-based ecommerce platform built with Spr
 
 ## Project Structure
 
+
 - **admin-server**: Spring Boot Admin server for monitoring and managing microservices.
 - **api-gateway**: API Gateway using Spring Cloud Gateway for routing and security.
 - **auth-service**: Handles authentication and authorization (OAuth2, JWT, etc.).
