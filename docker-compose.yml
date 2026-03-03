@@ -63,8 +63,3 @@ services:
     image:  fortuneiyke/ecommerce-api-docs:latest
     ports:
       - 9091:9091
-
-  webapp:
-    image: fortuneiyke/ecommerce-webapp:latest
-    ports:
-      - 3000:3000
