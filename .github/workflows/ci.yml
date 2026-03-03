@@ -10,6 +10,7 @@ on:
 
 env:
   DOCKERHUB_USERNAME: "${{secrets.DOCKER_USERNAME}}"
+  REPO_NAME: "ecommerce-microservice-java"
 
 
 jobs:
@@ -50,4 +51,8 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           password: ${{ secrets.VPS_PASSWORD }}
           port: ${{ secrets.VPS_PORT }}
-          script: docker run hello-world
+          script: |
+            cd ${{ github.event.repository.name }}
+            git pull
+            docker compose pull
+            docker compose up -d
