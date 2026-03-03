@@ -13,7 +13,8 @@ build_backend() {
     echo ""
     echo "[1/2] Building backend microservices..."
     cd "$PROJECT_DIR"
-    mvn clean package -DskipTests
+    mvn clean install -DskipTests -pl utils
+    mvn package -DskipTests
     echo "✓ Backend built successfully"
 }
 
