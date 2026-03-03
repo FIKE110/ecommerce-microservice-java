@@ -1,4 +1,4 @@
-api-gateway-url: http:/localhost:8081
+api-gateway-url: http://${API_GATEWAY_HOST:localhost}:${API_GATEWAY_PORT:8081}
 app:
   title: "PRODUCT-SERVICE"
   version: "1.0.0"
@@ -8,9 +8,9 @@ spring:
   banner:
     location: banner.txt
   datasource:
-    url: jdbc:postgresql://localhost:5432/ecommercems
-    username: postgres
-    password: password
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:ecommercems}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:password}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -23,13 +23,13 @@ api:
 rsa:
   public-key: classpath:certs/public.pem
 server:
-  port: 0
+  port: ${PRODUCT_SERVICE_PORT:0}
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka
 management:
   endpoint:
     health:
@@ -40,7 +40,7 @@ management:
         include: '*'
   zipkin:
     tracing:
-      endpoint: http://localhost:9411/api/v2/spans
+      endpoint: http://${ZIPKIN_HOST:localhost}:${ZIPKIN_PORT:9411}/api/v2/spans
   tracing:
     sampling:
       probability: 1.0

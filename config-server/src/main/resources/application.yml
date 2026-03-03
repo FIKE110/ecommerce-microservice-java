@@ -5,13 +5,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/fortune/ecommerce-config.git
+          uri: ${CONFIG_GIT_URI:https://github.com/fortune/ecommerce-config.git}
           default-label: main
 server:
-  port: 8888
+  port: ${CONFIG_SERVER_PORT:8888}
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka
