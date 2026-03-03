@@ -30,7 +30,7 @@ services:
       - 8083:8083
 
   order-service:
-    image: ecommerce-order-service:latest
+    image: fortuneiyke/ecommerce-order-service:latest
     ports:
       - 8084:8084
 
