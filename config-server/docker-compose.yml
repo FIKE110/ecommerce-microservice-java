@@ -1,0 +1,15 @@
+services:
+  config-server:
+    image: fortuneiyke/ecommerce-config-server:latest
+    ports:
+      - ${CONFIG_SERVER_PORT:-8888}:8888
+    networks:
+      - config-network
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - SPRING_CLOUD_CONFIG_SERVER_GIT_URI=${CONFIG_GIT_URI}
+      - SPRING_CLOUD_CONFIG_SERVER_GIT_DEFAULT_LABEL=main
+
+networks:
+  config-network:
+    driver: bridge

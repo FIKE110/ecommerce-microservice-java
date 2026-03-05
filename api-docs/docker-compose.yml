@@ -1,0 +1,15 @@
+services:
+  api-docs:
+    image: fortuneiyke/ecommerce-api-docs:latest
+    ports:
+      - ${API_DOCS_PORT:-9091}:9091
+    networks:
+      - docs-network
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://service-discovery:8761/eureka
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+
+networks:
+  docs-network:
+    driver: bridge

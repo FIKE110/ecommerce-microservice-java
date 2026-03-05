@@ -1,0 +1,11 @@
+services:
+  service-discovery:
+    image: fortuneiyke/ecommerce-service-discovery:latest
+    ports:
+      - ${EUREKA_PORT:-8761}:8761
+    networks:
+      - eureka-network
+
+networks:
+  eureka-network:
+    driver: bridge

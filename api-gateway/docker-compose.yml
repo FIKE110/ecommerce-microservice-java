@@ -1,0 +1,15 @@
+services:
+  api-gateway:
+    image: fortuneiyke/ecommerce-api-gateway:latest
+    ports:
+      - ${API_GATEWAY_PORT:-8000}:8000
+    networks:
+      - gateway-network
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://service-discovery:8761/eureka
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+
+networks:
+  gateway-network:
+    driver: bridge

@@ -1,0 +1,15 @@
+services:
+  admin-server:
+    image: fortuneiyke/ecommerce-admin-server:latest
+    ports:
+      - ${ADMIN_SERVER_PORT:-9090}:9090
+    networks:
+      - admin-network
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://service-discovery:8761/eureka
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+
+networks:
+  admin-network:
+    driver: bridge
