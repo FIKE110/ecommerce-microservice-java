@@ -1,4 +1,4 @@
-#Ecommerce Microservices CI/CD
+
 name: ecommerce-java-ms-ci
 
 on:
@@ -53,53 +53,53 @@ jobs:
       fail-fast: false
       matrix:
         include:
-#          - service: config-server
-#            port: 8888
-#            vps_host: ${{ secrets.VPS_HOST_CONFIG }}
+          - service: config-server
+            port: 8888
+            vps_host: ${{ secrets.VPS_HOST_CONFIG }}
           - service: service-discovery
             port: 8761
-            vps_host: ${{secrets.VPS_HOST_EUREKA}}
-#          - service: auth-service
-#            port: 8081
-#            db_port: 5433
-#            vps_host: ${{ secrets.VPS_HOST_AUTH }}
-#          - service: customer-service
-#            port: 8080
-#            db_port: 5434
-#            vps_host: ${{ secrets.VPS_HOST_CUSTOMER }}
-#          - service: product-service
-#            port: 8082
-#            db_port: 5435
-#            vps_host: ${{ secrets.VPS_HOST_PRODUCT }}
-#          - service: inventory-service
-#            port: 8083
-#            db_port: 5436
-#            vps_host: ${{ secrets.VPS_HOST_INVENTORY }}
-#          - service: order-service
-#            port: 8084
-#            db_port: 5437
-#            vps_host: ${{ secrets.VPS_HOST_ORDER }}
-#          - service: payment-service
-#            port: 8085
-#            db_port: 5438
-#            vps_host: ${{ secrets.VPS_HOST_PAYMENT }}
-#          - service: notification-service
-#            port: 8086
-#            db_port: 5439
-#            vps_host: ${{ secrets.VPS_HOST_NOTIFICATION }}
-#          - service: cart-service
-#            port: 8087
-#            db_port: 5440
-#            vps_host: ${{ secrets.VPS_HOST_CART }}
-#          - service: api-gateway
-#            port: 8000
-#            vps_host: ${{ secrets.VPS_HOST_GATEWAY }}
-#          - service: admin-server
-#            port: 9090
-#            vps_host: ${{ secrets.VPS_HOST_ADMIN }}
-#          - service: api-docs
-#            port: 9091
-#            vps_host: ${{ secrets.VPS_HOST_DOCS }}
+            vps_host: ${{ secrets.VPS_HOST_EUREKA }}
+          - service: auth-service
+            port: 8081
+            db_port: 5433
+            vps_host: ${{ secrets.VPS_HOST_AUTH }}
+          - service: customer-service
+            port: 8080
+            db_port: 5434
+            vps_host: ${{ secrets.VPS_HOST_CUSTOMER }}
+          - service: product-service
+            port: 8082
+            db_port: 5435
+            vps_host: ${{ secrets.VPS_HOST_PRODUCT }}
+          - service: inventory-service
+            port: 8083
+            db_port: 5436
+            vps_host: ${{ secrets.VPS_HOST_INVENTORY }}
+          - service: order-service
+            port: 8084
+            db_port: 5437
+            vps_host: ${{ secrets.VPS_HOST_ORDER }}
+          - service: payment-service
+            port: 8085
+            db_port: 5438
+            vps_host: ${{ secrets.VPS_HOST_PAYMENT }}
+          - service: notification-service
+            port: 8086
+            db_port: 5439
+            vps_host: ${{ secrets.VPS_HOST_NOTIFICATION }}
+          - service: cart-service
+            port: 8087
+            db_port: 5440
+            vps_host: ${{ secrets.VPS_HOST_CART }}
+          - service: api-gateway
+            port: 8000
+            vps_host: ${{ secrets.VPS_HOST_GATEWAY }}
+          - service: admin-server
+            port: 9090
+            vps_host: ${{ secrets.VPS_HOST_ADMIN }}
+          - service: api-docs
+            port: 9091
+            vps_host: ${{ secrets.VPS_HOST_DOCS }}
 
     steps:
       - name: Checkout repo
