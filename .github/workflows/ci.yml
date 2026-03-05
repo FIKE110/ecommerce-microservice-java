@@ -58,7 +58,7 @@ jobs:
 #            vps_host: ${{ secrets.VPS_HOST_CONFIG }}
           - service: service-discovery
             port: 8761
-            vps_host: ${{ secrets.VPS_HOST_EUREKA }}
+            vps_host: ${{secrets.VPS_HOST_EUREKA}}
 #          - service: auth-service
 #            port: 8081
 #            db_port: 5433
