@@ -43,3 +43,17 @@ jobs:
 
       - name: Push all docker images
         run: ./scripts/docker.sh push
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: deploy docker images to vps
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+            host: ${{ secrets.VPS_HOST }}
+            username: ${{ secrets.VPS_USER }}
+            key: ${{ secrets.VPS_SSH_KEY }}
+            script: |
+              cd /home/ubuntu/app
+              docker compose pull
+              docker compose up -d
