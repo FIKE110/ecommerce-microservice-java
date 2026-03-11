@@ -19,16 +19,16 @@ services:
       - RABBITMQ_USERNAME=${RABBITMQ_USERNAME}
       - RABBITMQ_PASSWORD=${RABBITMQ_PASSWORD}
 
-  auth-postgres:
-    image: postgres:16
-    ports:
-      - ${AUTH_DB_PORT:-5433}:5432
-    networks:
-      - auth-network
-    environment:
-      - POSTGRES_DB=auth_db
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
+#  auth-postgres:
+#    image: postgres:16
+#    ports:
+#      - ${AUTH_DB_PORT:-5433}:5432
+#    networks:
+#      - auth-network
+#    environment:
+#      - POSTGRES_DB=auth_db
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_PASSWORD=password
 
   rabbitmq:
     image: rabbitmq:3-management
