@@ -5,8 +5,8 @@ services:
       - ${AUTH_SERVICE_PORT:-8081}:8081
     networks:
       - auth-network
-    depends_on:
-      - auth-postgres
+#    depends_on:
+#      - auth-postgres
     environment:
       - SPRING_PROFILES_ACTIVE=default
       - SPRING_DATASOURCE_URL=${DATABASE_URL}
