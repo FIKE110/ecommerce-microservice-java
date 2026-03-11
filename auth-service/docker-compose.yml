@@ -9,10 +9,10 @@ services:
       - auth-postgres
     environment:
       - SPRING_PROFILES_ACTIVE=default
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://auth-postgres:5432/auth_db
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=password
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://service-discovery:8761/eureka
+      - SPRING_DATASOURCE_URL=${DATABASE_URL}
+      - SPRING_DATASOURCE_USERNAME=${DATABASE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DATABASE_PASSWORD}
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://${EUREKA_HOST}:8761/eureka
       - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
       - RABBITMQ_HOST=rabbitmq
       - RABBITMQ_PORT=${RABBITMQ_PORT}
