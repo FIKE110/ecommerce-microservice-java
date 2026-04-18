@@ -403,10 +403,9 @@ Add utils module as a dependency in service's `pom.xml`:
 ### Using Shared Classes
 
 ```java
-import com.fortune.ApiResponse;
-import com.fortune.ApiDataResponse;
-import com.fortune.DataWrapper;
-import com.fortune.MessageInString;
+import com.fortune.utils.ApiResponse;
+import com.fortune.utils.ApiDataResponse;
+import com.fortune.utils.DataWrapper;
 import com.fortune.exception.ResourceNotFoundException;
 import com.fortune.util.DateUtils;
 import com.fortune.constant.AppConstants;
@@ -417,23 +416,23 @@ public class ExampleController {
 
     @GetMapping("/{id}")
     public ResponseEntity<ApiDataResponse<DataWrapper<ResponseCode, ExampleDto>>> getExample(
-        @PathVariable UUID id
+            @PathVariable UUID id
     ) {
         try {
             ExampleDto example = exampleService.findById(id);
 
             return ResponseEntity.ok(
-                ApiResponse.data(
-                    ResponseCode.EXAMPLE_FETCHED,
-                    example
-                )
+                    ApiResponse.data(
+                            ResponseCode.EXAMPLE_FETCHED,
+                            example
+                    )
             );
         } catch (ResourceNotFoundException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
-                ApiResponse.error(
-                    ErrorCodes.RESOURCE_NOT_FOUND,
-                    e.getMessage()
-                )
+                    ApiResponse.error(
+                            ErrorCodes.RESOURCE_NOT_FOUND,
+                            e.getMessage()
+                    )
             );
         }
     }

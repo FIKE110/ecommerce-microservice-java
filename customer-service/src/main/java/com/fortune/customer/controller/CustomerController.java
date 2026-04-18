@@ -1,7 +1,9 @@
 package com.fortune.customer.controller;
 
-import com.fortune.*;
-import com.fortune.MessageInString;
+import com.fortune.utils.ApiDataResponse;
+import com.fortune.utils.ApiResponse;
+import com.fortune.utils.DataWrapper;
+import com.fortune.utils.MessageInString;
 import com.fortune.customer.dto.CustomerProfileDto;
 import com.fortune.customer.enumeration.CustomerResponseCode;
 import com.fortune.customer.request.CustomerCreateRequest;
@@ -47,7 +49,7 @@ public class CustomerController {
 
     @PutMapping
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<ApiDataResponse<DataWrapper<CustomerResponseCode, MessageInString>>> createCustomerProfile(@AuthenticationPrincipal Jwt jwt,@RequestBody @Valid CustomerUpdateRequest customerRequest) {
+    public ResponseEntity<ApiDataResponse<DataWrapper<CustomerResponseCode, MessageInString>>> createCustomerProfile(@AuthenticationPrincipal Jwt jwt, @RequestBody @Valid CustomerUpdateRequest customerRequest) {
         customerProfileService.updateCustomerProfile(jwt.getSubject(),customerRequest);
         return ResponseEntity.status(HttpStatus.CREATED).body(
                 ApiResponse.data(

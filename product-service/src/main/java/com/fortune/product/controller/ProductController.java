@@ -1,10 +1,9 @@
 package com.fortune.product.controller;
 
-import com.fortune.ApiDataResponse;
-import com.fortune.ApiResponse;
-import com.fortune.DataWrapper;
-import com.fortune.MessageInString;
-import com.fortune.product.dto.ProductDto;
+import com.fortune.utils.ApiDataResponse;
+import com.fortune.utils.ApiResponse;
+import com.fortune.utils.DataWrapper;
+import com.fortune.utils.MessageInString;
 import com.fortune.product.dto.ProductResponseDto;
 import com.fortune.product.entity.Product;
 import com.fortune.product.enumeration.ProductResponseCode;

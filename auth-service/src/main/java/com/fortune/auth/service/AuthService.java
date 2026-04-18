@@ -1,7 +1,6 @@
 package com.fortune.auth.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fortune.CustomException;
+import com.fortune.utils.CustomException;
 import com.fortune.auth.Response.Token;
 import com.fortune.auth.entity.Customer;
 import com.fortune.auth.enumeration.AuthMethod;
@@ -9,17 +8,12 @@ import com.fortune.auth.enumeration.Role;
 import com.fortune.auth.repository.CustomerRepository;
 import com.fortune.auth.request.CustomerSigninRequest;
 import com.fortune.auth.request.CustomerSignupRequest;
-import jakarta.validation.constraints.Email;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken;
-import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;

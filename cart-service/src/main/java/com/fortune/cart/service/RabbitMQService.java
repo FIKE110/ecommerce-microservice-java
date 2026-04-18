@@ -1,8 +1,7 @@
 package com.fortune.cart.service;
 
-import com.fortune.Event;
+import com.fortune.utils.Event;
 import com.fortune.cart.config.RabbitMQConfig;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;

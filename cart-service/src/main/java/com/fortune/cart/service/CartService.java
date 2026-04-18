@@ -1,7 +1,5 @@
 package com.fortune.cart.service;
 
-import com.fortune.Event;
-import com.fortune.EventType;
 import com.fortune.cart.config.OrderClient;
 import com.fortune.cart.config.ProductClient;
 import com.fortune.cart.model.Cart;

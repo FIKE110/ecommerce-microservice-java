@@ -1,9 +1,8 @@
 package com.fortune.product.service;
 
-import com.fortune.Event;
-import com.fortune.EventType;
+import com.fortune.utils.Event;
+import com.fortune.utils.EventType;
 import com.fortune.product.client.InventoryClient;
-import com.fortune.product.dto.ProductDto;
 import com.fortune.product.dto.ProductResponseDto;
 import com.fortune.product.entity.Product;
 import com.fortune.product.repository.ProductRepository;

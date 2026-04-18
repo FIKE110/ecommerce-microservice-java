@@ -1,19 +1,14 @@
 package com.fortune.order.service;
 
 
-import com.fortune.Event;
-import com.fortune.EventType;
+import com.fortune.utils.Event;
+import com.fortune.utils.EventType;
 import com.fortune.order.config.InventoryClient;
-import com.fortune.order.config.RabbitMQConfig;
 import com.fortune.order.enumeration.OrderStatus;
-import jakarta.validation.constraints.NotNull;
-import lombok.NonNull;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 @Service
 public class RabbitMQService {

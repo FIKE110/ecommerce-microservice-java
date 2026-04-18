@@ -1,4 +1,4 @@
-package com.fortune;
+package com.fortune.utils;
 
 public enum EventType {
     PRODUCT_CREATED,

@@ -1,9 +1,9 @@
 package com.fortune.product.advice;
 
-import com.fortune.ApiErrorResponse;
-import com.fortune.CustomError;
-import com.fortune.CustomException;
-import com.fortune.ServerError;
+import com.fortune.utils.ApiErrorResponse;
+import com.fortune.utils.CustomError;
+import com.fortune.utils.CustomException;
+import com.fortune.utils.ServerError;
 
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;

@@ -1,12 +1,11 @@
 package com.fortune.inventory.service;
 
-import com.fortune.Event;
-import com.fortune.EventType;
+import com.fortune.utils.Event;
+import com.fortune.utils.EventType;
 import com.fortune.inventory.config.RabbitMQConfig;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 

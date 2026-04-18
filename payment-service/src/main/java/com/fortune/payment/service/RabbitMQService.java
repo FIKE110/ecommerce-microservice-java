@@ -1,6 +1,6 @@
 package com.fortune.payment.service;
 
-import com.fortune.Event;
+import com.fortune.utils.Event;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 

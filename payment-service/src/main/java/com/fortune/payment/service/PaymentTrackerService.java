@@ -2,8 +2,8 @@ package com.fortune.payment.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fortune.Event;
-import com.fortune.EventType;
+import com.fortune.utils.Event;
+import com.fortune.utils.EventType;
 import com.fortune.payment.config.PaymentResponse;
 import com.fortune.payment.repository.PaymentResponseRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,7 +13,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
-import java.util.Objects;
 import java.util.UUID;
 
 @Service

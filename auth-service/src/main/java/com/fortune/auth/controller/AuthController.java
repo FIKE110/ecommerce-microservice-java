@@ -1,8 +1,8 @@
 package com.fortune.auth.controller;
 
-import com.fortune.ApiResponse;
-import com.fortune.ApiDataResponse;
-import com.fortune.DataWrapper;
+import com.fortune.utils.ApiResponse;
+import com.fortune.utils.ApiDataResponse;
+import com.fortune.utils.DataWrapper;
 import com.fortune.auth.Response.MessageInString;
 import com.fortune.auth.Response.Token;
 import com.fortune.auth.enumeration.AuthResponseCode;
@@ -15,8 +15,6 @@ import com.fortune.auth.service.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
